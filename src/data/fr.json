@@ -1,0 +1,232 @@
+{
+  "clinic": {
+    "name": "Soufia Clinic Dental Care",
+    "phone": "+90 (555) 000 00 00",
+    "tagline": "Soins Dentaires & Esthétique",
+    "address": "Istanbul, Turquie",
+    "email": "info@soufia-clinic.com"
+  },
+  "nav": {
+    "about": "À Propos",
+    "services": "Services",
+    "beforeAfter": "Avant & Après",
+    "specialty": "Notre Spécialité",
+    "testimonials": "Témoignages",
+    "whatsapp": "Whatsapp",
+    "chatWhatsapp": "Chat sur WhatsApp"
+  },
+  "hero": {
+    "subtitle": "Votre Sourire & Votre Confiance Avant Tout.",
+    "title": "Soins Dentaires Premium & Esthétique à la Clinique Soufia",
+    "description": "Les traitements dentaires et cosmétiques les plus récents et les plus efficaces. Retrouvez votre beau sourire naturellement et en toute confiance avec les meilleurs experts dentaires d'Istanbul.",
+    "whatsappLabel": "Chat via Whatsapp"
+  },
+  "overview": {
+    "title": "Restauration Dentaire & Sourire",
+    "text": "Obtenez le sourire de vos rêves à Istanbul avec la Clinique Soufia. Rien ne nous fait plus plaisir que de voir quelqu'un quitter notre clinique avec un sourire sain, éclatant et une confiance entièrement renouvelée. Nous proposons des procédures de pointe selon les normes d'hygiène les plus élevées."
+  },
+  "coreFeatures": [
+    {
+      "id": 1,
+      "title": "Personnel Professionnel",
+      "description": "Notre clinique comprend des chirurgiens dentaires certifiés, des orthodontistes compétents et des hygiénistes dentaires dévoués, tous engagés à fournir les soins dentaires de la plus haute qualité.",
+      "iconName": "Stethoscope"
+    },
+    {
+      "id": 2,
+      "title": "Implant Dentaire Saphir",
+      "description": "Les techniques d'implants dentaires les plus modernes et efficaces, utilisant des piliers en saphir biocompatibles de haute qualité pour garantir une sensation naturelle et une stabilité à vie.",
+      "iconName": "Activity"
+    },
+    {
+      "id": 3,
+      "title": "Service d'Urgence",
+      "description": "Bien que les procédures dentaires à la Clinique Soufia soient extrêmement précises et sûres, nous sommes disponibles 24h/24 et 7j/7 pour les soins dentaires d'urgence.",
+      "iconName": "HeartPulse"
+    }
+  ],
+  "about": {
+    "sectionLabel": "À Propos de Notre Clinique",
+    "title": "Un Héritage d'Excellence du Sourire",
+    "description": "Fondée par des chirurgiens dentaires de premier plan, la Clinique Soufia transforme les sourires à Istanbul depuis plus de 15 ans. Notre équipe multidisciplinaire combine vision artistique et précision clinique.",
+    "watchTour": "Voir la Visite de la Clinique",
+    "stats": [
+      { "value": "15+", "label": "Ans d'Expérience" },
+      { "value": "99.8%", "label": "Taux de Réussite" },
+      { "value": "12k+", "label": "Patients Satisfaits" },
+      { "value": "5★", "label": "Note Patients" }
+    ]
+  },
+  "services": {
+    "sectionLabel": "Services Patients",
+    "title": "Tout Inclus dans Votre Séjour",
+    "subtitle": "Nous prenons soin de chaque détail pour que vous puissiez vous concentrer sur votre sourire.",
+    "items": [
+      {
+        "id": 1,
+        "title": "Séjour Hôtel de Luxe",
+        "description": "Pendant votre parcours médical et dentaire, la Clinique Soufia offre à ses patients internationaux un hébergement gratuit dans des hôtels 5 étoiles présélectionnés à Istanbul.",
+        "iconName": "Hotel"
+      },
+      {
+        "id": 2,
+        "title": "Support Multilingue",
+        "description": "Nous assignons un hôte personnel et un interprète professionnel qui parle couramment votre langue pour vous accompagner à chaque étape de votre séjour.",
+        "iconName": "Languages"
+      },
+      {
+        "id": 3,
+        "title": "Suivi Dédié",
+        "description": "La Clinique Soufia suit et surveille ses patients pendant une année complète après leur traitement dentaire ou implants, avec des contrôles réguliers à distance.",
+        "iconName": "ShieldAlert"
+      },
+      {
+        "id": 4,
+        "title": "Consultation Gratuite",
+        "description": "La Clinique Soufia ne facture pas la consultation virtuelle initiale ni la planification clinique détaillée du traitement, offrant un diagnostic sourire numérique transparent.",
+        "iconName": "CalendarDays"
+      },
+      {
+        "id": 5,
+        "title": "Bien-être du Patient",
+        "description": "Nous traitons chaque patient comme un membre de notre famille. Notre priorité est de rendre votre expérience dentaire sans douleur, confortable et satisfaisante.",
+        "iconName": "Heart"
+      },
+      {
+        "id": 6,
+        "title": "Transferts VIP Gratuits",
+        "description": "La Clinique Soufia offre des transferts VIP privés et de luxe pour nos patients tout au long de leur séjour, couvrant les transferts aéroport, hôtel et la clinique.",
+        "iconName": "Car"
+      }
+    ]
+  },
+  "beforeAfter": {
+    "sectionLabel": "Vraies Transformations",
+    "title": "Résultats Avant & Après",
+    "description": "Faites glisser le curseur doré pour comparer les résultats avant et après traitement.",
+    "ctaWhatsapp": "Consulter nos Experts sur WhatsApp",
+    "labelBefore": "AVANT le Traitement",
+    "labelAfter": "APRÈS (Beau Sourire)",
+    "cases": [
+      {
+        "id": 1,
+        "title": "Implants Dentaires Complets",
+        "description": "Restauration complète de la capacité masticatoire et esthétique naturelle avec des couronnes en zirconium premium.",
+        "beforeImg": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=70&w=600&h=450&blur=2",
+        "afterImg": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=600&h=450"
+      },
+      {
+        "id": 2,
+        "title": "Facettes Dentaires Saphir",
+        "description": "Correction des taches d'émail sévères et fermeture des espaces avec des facettes CAD/CAM sur mesure.",
+        "beforeImg": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=70&w=600&h=450&blur=1",
+        "afterImg": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&q=80&w=600&h=450"
+      },
+      {
+        "id": 3,
+        "title": "Blanchiment Laser des Dents",
+        "description": "Traitement de blanchiment sûr de 8 nuances avec la technologie laser froide bleue avancée et indolore.",
+        "beforeImg": "https://images.unsplash.com/photo-1512223792601-592a9809eed4?auto=format&fit=crop&q=70&w=600&h=450&blur=2",
+        "afterImg": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=600&h=450"
+      }
+    ]
+  },
+  "specialty": {
+    "sectionLabel": "Expertise & Soins",
+    "badge": "★ Meilleure Clinique Dentaire Turquie",
+    "title": "Nos Spécialités Dentaires",
+    "description": "La clinique propose des solutions médicales modernes incluant la dentisterie cosmétique avancée, l'alignement orthodontique, la greffe osseuse et les implants saphir à charge immédiate.",
+    "longDescription": "L'hôpital propose des services complets de pointe dispensés par des équipes cliniques expérimentées. Nous nous concentrons sur votre esthétique faciale personnelle et utilisons des matériaux et technologies éprouvés pour réaliser des transformations de sourire. Nos forfaits de soins premium comprennent un hébergement hôtelier de luxe, des transferts VIP privés et une année complète de suivi personnalisé.",
+    "whatsappButton": "Chat via Whatsapp",
+    "badges": ["Certifié ISO", "100% Garanti", "Sédation Sans Douleur"]
+  },
+  "testimonials": {
+    "sectionLabel": "Avis Patients",
+    "title": "Ce Que Disent Nos Patients",
+    "subtitle": "De vraies histoires de vrais patients qui ont transformé leur sourire à la Clinique Soufia.",
+    "items": [
+      {
+        "id": 1,
+        "name": "Sofia Martins",
+        "location": "Lisbonne, Portugal",
+        "rating": 5,
+        "text": "Service chaleureux et centré sur le patient avec une précision absolue. J'ai fait des couronnes en zirconium complètes et je me sens beaucoup plus confiante. Excellent suivi!",
+        "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=120&h=120"
+      },
+      {
+        "id": 2,
+        "name": "Ahmed R.",
+        "location": "Maroc, Casablanca",
+        "rating": 5,
+        "text": "Choisir la Clinique Soufia a été la meilleure décision! De la consultation en ligne gratuite au transfert VIP à l'aéroport, tout était parfait. Les implants dentaires Saphir semblent extrêmement naturels.",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120&h=120"
+      },
+      {
+        "id": 3,
+        "name": "Marco L.",
+        "location": "Istanbul, Turquie",
+        "rating": 5,
+        "text": "Professionnel et indolore du début à la fin. Hébergement hôtelier gratuit, transferts privés fluides et une équipe médicale hautement qualifiée ont rendu ma transformation de sourire sans stress.",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=120&h=120"
+      }
+    ]
+  },
+  "stats": {
+    "items": [
+      { "value": "15+", "label": "Ans d'Expérience" },
+      { "value": "99.8%", "label": "Taux de Réussite" },
+      { "value": "12k+", "label": "Patients Satisfaits" },
+      { "value": "5★", "label": "Note Patients" }
+    ]
+  },
+  "consultation": {
+    "sectionLabel": "Consultation Gratuite",
+    "title": "Obtenez Votre Plan de Traitement Gratuit",
+    "subtitle": "Remplissez ce formulaire et nos experts dentaires vous contacteront dans les 24 heures avec un plan de traitement personnalisé.",
+    "badge": "Plan de Traitement Gratuit"
+  },
+  "form": {
+    "name": "Nom Complet",
+    "namePlaceholder": "ex. Jean Dupont",
+    "phone": "Numéro de Téléphone",
+    "phonePlaceholder": "ex. 555000000",
+    "email": "Adresse E-mail",
+    "emailPlaceholder": "ex. jean@exemple.com",
+    "message": "Message / Traitement Souhaité",
+    "messagePlaceholder": "Décrivez vos objectifs dentaires (ex. implants, blanchiment, alignement)...",
+    "submit": "Prendre Rendez-vous",
+    "contactSubmit": "Nous Contacter",
+    "secure": "100% Sécurisé & Confidentiel",
+    "yourName": "Votre Nom",
+    "yourMessage": "Votre Message",
+    "errors": {
+      "nameRequired": "Le nom est requis",
+      "phoneRequired": "Le téléphone est requis",
+      "phoneInvalid": "Numéro de téléphone invalide",
+      "emailRequired": "L'email est requis",
+      "emailInvalid": "Adresse email invalide"
+    }
+  },
+  "footer": {
+    "description": "La Clinique Soufia fournit des implants dentaires, des transformations de sourire et des traitements orthodontiques avec des chirurgiens cosmétiques hautement accrédités à Istanbul, Turquie.",
+    "usefulLinks": "Liens Utiles",
+    "contactUs": "Contactez-Nous",
+    "copyright": "© 2026. Clinique Soufia. Tous Droits Réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "chatTooltip": "Discutez avec nous!",
+    "links": [
+      { "label": "À Propos", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Avant & Après", "href": "#before-after" },
+      { "label": "Notre Spécialité", "href": "#specialty" },
+      { "label": "Témoignages", "href": "#testimonials" },
+      { "label": "Consultation Gratuite", "href": "#consultation-form" }
+    ]
+  },
+  "success": {
+    "title": "Réservation Confirmée!",
+    "subtitle": "Votre demande de consultation a été reçue.",
+    "close": "Fermer"
+  }
+}

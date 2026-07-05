@@ -1,0 +1,6 @@
+{
+  "name": "Soufia Clinic Dental Care",
+  "description": "Premium dental care and dental medic landing page inspired by the Soufia Clinic visual design system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", system-ui, -apple-system, sans-serif;
+  --color-primary-blue: #066AAB;
+  --color-primary-blue-hover: #005A87;
+  --color-primary-blue-accent: #7986CB;
+  --color-accent-magenta: #B11E76;
+  --color-accent-magenta-hover: #A01A69;
+  --color-accent-teal: #007CBA;
+  --color-accent-navy: #005A87;
+  --color-neutral-charcoal: #111111;
+  --color-surface-warm: #FBFAF3;
+  --color-neutral-gray: #7A7A7A;
+  --color-light-gray: #686868;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-neutral-charcoal);
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for premium experience */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #066AAB;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #005A87;
+}
