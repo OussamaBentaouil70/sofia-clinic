@@ -1,49 +1,27 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-import { OVERVIEW_CARD, CORE_FEATURES } from '../data';
 import { Stethoscope, Activity, HeartPulse, LucideIcon } from 'lucide-react';
+import { useTranslation } from '../contexts/LanguageContext';
 
-const iconMap: Record<string, LucideIcon> = {
-  Stethoscope: Stethoscope,
-  Activity: Activity,
-  HeartPulse: HeartPulse,
-};
+const iconMap: Record<string, LucideIcon> = { Stethoscope, Activity, HeartPulse };
 
 export default function CoreFeatures() {
+  const { t } = useTranslation();
   return (
     <section className="relative z-20 -mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      {/* Overview Card */}
       <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 sm:p-10 text-center max-w-4xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-extrabold text-neutral-charcoal tracking-tight">
-          {OVERVIEW_CARD.title}
-        </h2>
+        <h2 className="text-2xl sm:text-3xl font-extrabold text-neutral-charcoal tracking-tight">{t.overview.title}</h2>
         <div className="w-16 h-1 bg-primary-blue mx-auto mt-4 rounded-full" />
-        <p className="mt-6 text-sm sm:text-base md:text-lg text-neutral-gray font-light leading-relaxed">
-          {OVERVIEW_CARD.text}
-        </p>
+        <p className="mt-6 text-sm sm:text-base md:text-lg text-neutral-gray font-light leading-relaxed">{t.overview.text}</p>
       </div>
-
-      {/* Core 3 Features Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 pb-8">
-        {CORE_FEATURES.map((feature) => {
-          const IconComponent = iconMap[feature.iconName] || Stethoscope;
+        {t.coreFeatures.map((feature) => {
+          const Icon = iconMap[feature.iconName] || Stethoscope;
           return (
-            <div
-              key={feature.id}
-              className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-primary-blue/20 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center text-center group"
-            >
+            <div key={feature.id} className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-primary-blue/20 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center text-center group">
               <div className="w-14 h-14 rounded-full bg-accent-magenta/10 text-accent-magenta flex items-center justify-center group-hover:bg-primary-blue/10 group-hover:text-primary-blue transition-colors duration-300">
-                <IconComponent className="w-6 h-6" />
+                <Icon className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-neutral-charcoal mt-5">
-                {feature.title}
-              </h3>
-              <p className="text-sm text-neutral-gray mt-3 font-light leading-relaxed">
-                {feature.description}
-              </p>
+              <h3 className="text-lg font-bold text-neutral-charcoal mt-5">{feature.title}</h3>
+              <p className="text-sm text-neutral-gray mt-3 font-light leading-relaxed">{feature.description}</p>
             </div>
           );
         })}

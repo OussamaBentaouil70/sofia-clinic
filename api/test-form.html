@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Soufia Clinic – Email Test</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,sans-serif;background:#f4f6fb;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
+  .card{background:#fff;border-radius:16px;padding:40px;width:100%;max-width:480px;box-shadow:0 8px 32px rgba(0,0,0,.10)}
+  h1{font-size:20px;font-weight:800;color:#111;margin-bottom:4px}
+  p{font-size:13px;color:#888;margin-bottom:28px}
+  label{display:block;font-size:12px;font-weight:700;color:#444;margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+  input,textarea{width:100%;padding:10px 14px;border:1.5px solid #e0e0e0;border-radius:8px;font-size:14px;outline:none;transition:.2s;margin-bottom:16px}
+  input:focus,textarea:focus{border-color:#066AAB;box-shadow:0 0 0 3px rgba(6,106,171,.08)}
+  textarea{resize:vertical;height:80px}
+  button{width:100%;padding:13px;background:#B11E76;color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:.2s}
+  button:hover{background:#a01a69}
+  button:disabled{background:#ccc;cursor:not-allowed}
+  #result{margin-top:20px;padding:14px 18px;border-radius:10px;font-size:13px;display:none}
+  #result.ok{background:#e8f5e9;color:#2e7d32;border:1px solid #c8e6c9}
+  #result.err{background:#ffeaea;color:#c62828;border:1px solid #ffcdd2}
+  .tag{display:inline-block;background:#f0f0f0;color:#666;font-size:11px;padding:3px 10px;border-radius:99px;margin-bottom:20px}
+</style>
+</head>
+<body>
+<div class="card">
+  <span class="tag">XAMPP TEST PAGE</span>
+  <h1>Email Test — Soufia Clinic</h1>
+  <p>Fill in real details to receive a test confirmation email at your inbox.</p>
+
+  <form id="testForm">
+    <label>Full Name</label>
+    <input type="text" name="name" value="Test Patient" required>
+
+    <label>Email (will receive confirmation)</label>
+    <input type="email" name="email" value="bentaouiloussama@gmail.com" required>
+
+    <label>Phone</label>
+    <input type="text" name="phone" value="+213 555 123 456">
+
+    <label>Message</label>
+    <textarea name="message">I am interested in dental implants and veneers. Please send me a treatment plan.</textarea>
+
+    <button type="submit" id="btn">Send Test Emails</button>
+  </form>
+
+  <div id="result"></div>
+</div>
+
+<script>
+document.getElementById('testForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('btn');
+  const result = document.getElementById('result');
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+  result.style.display = 'none';
+
+  const data = Object.fromEntries(new FormData(e.target));
+
+  try {
+    const res = await fetch('send-mail.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    const json = await res.json();
+
+    if (json.success) {
+      result.className = 'ok';
+      result.innerHTML = `✅ <strong>Both emails sent!</strong><br>Booking ID: <code>${json.booking_id}</code><br>Check your inbox at <strong>bentaouiloussama@gmail.com</strong>`;
+    } else {
+      result.className = 'err';
+      result.innerHTML = `⚠️ <strong>Partial / failed:</strong><br>${(json.errors || []).join('<br>') || JSON.stringify(json)}`;
+    }
+  } catch (err) {
+    result.className = 'err';
+    result.innerHTML = `❌ <strong>Request failed:</strong> ${err.message}`;
+  }
+
+  result.style.display = 'block';
+  btn.disabled = false;
+  btn.textContent = 'Send Test Emails';
+});
+</script>
+</body>
+</html>

@@ -24,20 +24,23 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // ─── Load PHPMailer ────────────────────────────────────────────────────────────
-require_once __DIR__ . '/../vendor/autoload.php';
+// Works both in the real project (vendor one level up) and in XAMPP (vendor next to api/)
+$autoload = file_exists(__DIR__ . '/../vendor/autoload.php')
+    ? __DIR__ . '/../vendor/autoload.php'
+    : __DIR__ . '/vendor/autoload.php';
+require_once $autoload;
 
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-// ─── SMTP Configuration – set these in your .env or directly below ─────────────
-$smtpHost     = getenv('SMTP_HOST')     ?: 'smtp.gmail.com';
-$smtpPort     = (int)(getenv('SMTP_PORT')     ?: 587);
-$smtpUser     = getenv('SMTP_USER')     ?: 'your@gmail.com';
-$smtpPass     = getenv('SMTP_PASS')     ?: 'your_app_password';
-$smtpFrom     = getenv('SMTP_FROM')     ?: 'noreply@soufia-clinic.com';
+// ─── SMTP Configuration ────────────────────────────────────────────────────────
+$smtpHost     = getenv('SMTP_HOST')      ?: 'smtp.gmail.com';
+$smtpPort     = (int)(getenv('SMTP_PORT') ?: 587);
+$smtpUser     = getenv('SMTP_USER')      ?: 'bentaouiloussama@gmail.com';
+$smtpPass     = getenv('SMTP_PASS')      ?: 'ruto jzxm hcly coqx';
+$smtpFrom     = getenv('SMTP_FROM')      ?: 'bentaouiloussama@gmail.com';
 $smtpFromName = getenv('SMTP_FROM_NAME') ?: 'Soufia Clinic';
-$adminEmail   = getenv('ADMIN_EMAIL')   ?: 'bentaouiloussama@gmail.com';
+$adminEmail   = getenv('ADMIN_EMAIL')    ?: 'bentaouiloussama@gmail.com';
 
 // ─── Parse & sanitize input ────────────────────────────────────────────────────
 $raw = json_decode(file_get_contents('php://input'), true);

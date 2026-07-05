@@ -46,9 +46,22 @@
     }
   ],
   "about": {
-    "sectionLabel": "À Propos de Notre Clinique",
-    "title": "Un Héritage d'Excellence du Sourire",
-    "description": "Fondée par des chirurgiens dentaires de premier plan, la Clinique Soufia transforme les sourires à Istanbul depuis plus de 15 ans. Notre équipe multidisciplinaire combine vision artistique et précision clinique.",
+    "sectionLabel": "À Propos",
+    "title": "Soins Dentaires de Classe Mondiale à la Clinique Soufia",
+    "paragraphs": [
+      "La Clinique Soufia offre une expérience de soins dentaires de haute qualité et personnalisée à Istanbul, Turquie. Nous travaillons avec des chirurgiens-dentistes et orthodontistes hautement accrédités pour garantir des résultats cosmétiques et reconstructifs exceptionnels.",
+      "Des patients de tous horizons viennent du monde entier pour recevoir nos traitements spécialisés. Notre engagement absolu est de fournir une expérience clinique de classe mondiale, offrant des sourires parfaitement naturels, durables et sains qui changent des vies.",
+      "Équipés des derniers systèmes de conception dentaire CAD/CAM, modules de blanchiment laser et technologies d'implants saphir, nous combinons autorité médicale et confort absolu du patient."
+    ],
+    "watchVideo": "Voir la Vidéo",
+    "watchVideoSub": "Faites une visite virtuelle de 1 minute de notre clinique de luxe",
+    "videoTitle": "Visite Virtuelle de la Clinique Soufia",
+    "videoSub": "Faites une promenade numérique à travers nos installations ultramodernes à Istanbul, Turquie.",
+    "accredited": "Chirurgiens Accrédités",
+    "successRatio": "Taux de Réussite",
+    "painless": "Sans Douleur",
+    "sedation": "Sédation Douce",
+    "description": "Fondée par des chirurgiens dentaires de premier plan, la Clinique Soufia transforme les sourires à Istanbul depuis plus de 15 ans.",
     "watchTour": "Voir la Visite de la Clinique",
     "stats": [
       { "value": "15+", "label": "Ans d'Expérience" },

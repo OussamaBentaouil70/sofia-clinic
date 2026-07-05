@@ -1,65 +1,70 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-import { useState, useEffect } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { Menu, X, Phone, Globe } from 'lucide-react';
 import { CLINIC_PHONE, CLINIC_WHATSAPP } from '../data';
-import WhatsAppIcon from './WhatsAppIcon';
 import { motion, AnimatePresence } from 'motion/react';
+import WhatsAppIcon from './WhatsAppIcon';
+import { useTranslation } from '../contexts/LanguageContext';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const langRef = useRef<HTMLDivElement>(null);
+  const { lang, setLang, t } = useTranslation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   const navLinks = [
-    { label: 'About Us', href: '#about' },
-    { label: 'Services', href: '#services' },
-    { label: 'Before & After', href: '#before-after' },
-    { label: 'Our Specialty', href: '#specialty' },
-    { label: 'Testimonials', href: '#testimonials' },
+    { label: t.nav.about, href: '#about' },
+    { label: t.nav.services, href: '#services' },
+    { label: t.nav.beforeAfter, href: '#before-after' },
+    { label: t.nav.specialty, href: '#specialty' },
+    { label: t.nav.testimonials, href: '#testimonials' },
   ];
+
+  const languages = [
+    { code: 'en' as const, label: 'English', flag: '🇬🇧' },
+    { code: 'fr' as const, label: 'Français', flag: '🇫🇷' },
+  ];
+
+  const currentLang = languages.find(l => l.code === lang)!;
 
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? 'bg-white shadow-md py-3 border-b border-gray-100'
-            : 'bg-black/25 backdrop-blur-sm py-4'
+          scrolled ? 'bg-white shadow-md py-3 border-b border-gray-100' : 'bg-black/25 backdrop-blur-sm py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            {/* Logo Section */}
+
+            {/* Logo */}
             <a href="#" className="flex flex-col select-none group">
               <div className="flex items-baseline space-x-1">
-                <span className="text-2xl sm:text-3xl font-extrabold tracking-tight text-accent-magenta italic font-sans">
-                  Soufia
-                </span>
-                <span className="text-xs font-bold tracking-[0.25em] text-[#FCB900] uppercase font-sans">
-                  Clinic
-                </span>
+                <span className="text-2xl sm:text-3xl font-extrabold tracking-tight text-accent-magenta italic font-sans">Soufia</span>
+                <span className="text-xs font-bold tracking-[0.25em] text-[#FCB900] uppercase font-sans">Clinic</span>
               </div>
               <span className="text-[9px] text-gray-400 -mt-1 font-light tracking-wide group-hover:text-primary-blue transition-colors">
-                Dental Care & Aesthetics
+                {t.clinic.tagline}
               </span>
             </a>
 
-            {/* Desktop Nav Links */}
+            {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center space-x-8">
               {navLinks.map((link) => (
                 <a
@@ -74,8 +79,8 @@ export default function Header() {
               ))}
             </nav>
 
-            {/* Header Actions */}
-            <div className="hidden sm:flex items-center space-x-4">
+            {/* Actions */}
+            <div className="hidden sm:flex items-center space-x-3">
               <a
                 href={`tel:${CLINIC_PHONE.replace(/\s+/g, '')}`}
                 className={`flex items-center space-x-2 text-sm font-semibold transition-colors ${
@@ -86,7 +91,52 @@ export default function Header() {
                 <span className="hidden md:inline">{CLINIC_PHONE}</span>
               </a>
 
-              {/* Whatsapp Button */}
+              {/* Language Switcher */}
+              <div className="relative" ref={langRef}>
+                <button
+                  onClick={() => setLangOpen(!langOpen)}
+                  className={`inline-flex items-center space-x-1.5 text-xs font-bold px-3 py-2 rounded-full border transition-all duration-200 cursor-pointer ${
+                    scrolled
+                      ? 'border-gray-200 text-neutral-charcoal hover:border-primary-blue hover:text-primary-blue bg-white'
+                      : 'border-white/30 text-white hover:border-white bg-white/10'
+                  }`}
+                  aria-label="Select language"
+                >
+                  <Globe className="w-3.5 h-3.5" />
+                  <span>{currentLang.flag} {currentLang.code.toUpperCase()}</span>
+                  <span className="text-[8px] opacity-60">▼</span>
+                </button>
+
+                <AnimatePresence>
+                  {langOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -6, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: -6, scale: 0.95 }}
+                      transition={{ duration: 0.15 }}
+                      className="absolute right-0 top-full mt-2 w-36 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50"
+                    >
+                      {languages.map((l) => (
+                        <button
+                          key={l.code}
+                          onClick={() => { setLang(l.code); setLangOpen(false); }}
+                          className={`w-full flex items-center space-x-2.5 px-4 py-3 text-sm font-medium transition-colors cursor-pointer ${
+                            lang === l.code
+                              ? 'bg-primary-blue/10 text-primary-blue font-bold'
+                              : 'text-neutral-charcoal hover:bg-gray-50'
+                          }`}
+                        >
+                          <span className="text-base">{l.flag}</span>
+                          <span>{l.label}</span>
+                          {lang === l.code && <span className="ml-auto text-primary-blue text-xs">✓</span>}
+                        </button>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              {/* WhatsApp button */}
               <a
                 href={CLINIC_WHATSAPP}
                 target="_blank"
@@ -94,25 +144,28 @@ export default function Header() {
                 className="inline-flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-semibold px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-all duration-200"
               >
                 <WhatsAppIcon className="w-4 h-4" />
-                <span>Whatsapp</span>
+                <span>{t.nav.whatsapp}</span>
               </a>
             </div>
 
-            {/* Mobile Hamburger Menu Icon */}
+            {/* Mobile icons */}
             <div className="flex items-center sm:hidden space-x-2">
-              <a
-                href={CLINIC_WHATSAPP}
-                target="_blank"
-                rel="noreferrer"
-                className="bg-[#25D366] text-white p-2 rounded-full shadow"
+              {/* Mobile language toggle (simple flag cycle) */}
+              <button
+                onClick={() => setLang(lang === 'en' ? 'fr' : 'en')}
+                className={`p-2 rounded-full text-sm font-bold border transition-all ${
+                  scrolled ? 'border-gray-200 bg-white' : 'border-white/30 bg-white/10 text-white'
+                }`}
+                aria-label="Toggle language"
               >
+                {lang === 'en' ? '🇫🇷' : '🇬🇧'}
+              </button>
+              <a href={CLINIC_WHATSAPP} target="_blank" rel="noreferrer" className="bg-[#25D366] text-white p-2 rounded-full shadow">
                 <WhatsAppIcon className="w-4 h-4" />
               </a>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`p-2 rounded-md ${
-                  scrolled ? 'text-neutral-charcoal hover:bg-gray-100' : 'text-white hover:bg-white/10'
-                }`}
+                className={`p-2 rounded-md ${scrolled ? 'text-neutral-charcoal hover:bg-gray-100' : 'text-white hover:bg-white/10'}`}
               >
                 {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
@@ -121,7 +174,7 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile Drawer Navigation */}
+      {/* Mobile Drawer */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -143,13 +196,24 @@ export default function Header() {
                 </a>
               ))}
               <div className="pt-2 flex flex-col space-y-3">
-                <a
-                  href={`tel:${CLINIC_PHONE.replace(/\s+/g, '')}`}
-                  className="flex items-center space-x-2 text-sm font-semibold text-primary-blue"
-                >
+                <a href={`tel:${CLINIC_PHONE.replace(/\s+/g, '')}`} className="flex items-center space-x-2 text-sm font-semibold text-primary-blue">
                   <Phone className="w-4 h-4" />
                   <span>{CLINIC_PHONE}</span>
                 </a>
+                {/* Language buttons in mobile drawer */}
+                <div className="flex gap-2">
+                  {languages.map((l) => (
+                    <button
+                      key={l.code}
+                      onClick={() => { setLang(l.code); setIsOpen(false); }}
+                      className={`flex-1 flex items-center justify-center space-x-1.5 py-2 rounded-lg border text-sm font-bold transition-all cursor-pointer ${
+                        lang === l.code ? 'bg-primary-blue text-white border-primary-blue' : 'border-gray-200 text-neutral-charcoal'
+                      }`}
+                    >
+                      <span>{l.flag}</span><span>{l.label}</span>
+                    </button>
+                  ))}
+                </div>
                 <a
                   href={CLINIC_WHATSAPP}
                   target="_blank"
@@ -157,7 +221,7 @@ export default function Header() {
                   className="flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold py-3 rounded-xl shadow-md"
                 >
                   <WhatsAppIcon className="w-5 h-5" />
-                  <span>Chat on WhatsApp</span>
+                  <span>{t.nav.chatWhatsapp}</span>
                 </a>
               </div>
             </div>

@@ -46,9 +46,22 @@
     }
   ],
   "about": {
-    "sectionLabel": "About Our Clinic",
-    "title": "A Legacy of Smile Excellence",
-    "description": "Founded by leading dental surgeons, Soufia Clinic has been transforming smiles across Istanbul for over 15 years. Our multidisciplinary team combines artistic vision with clinical precision to deliver outcomes that exceed expectations.",
+    "sectionLabel": "About Us",
+    "title": "World-Class Dental Care Services at Soufia Clinic",
+    "paragraphs": [
+      "Soufia Clinic offers a high-quality, uniquely personalized dental care experience in Istanbul, Turkey. We work with carefully selected, highly accredited dental surgeons and orthodontists to ensure exceptional cosmetic and reconstructive results.",
+      "Patients from diverse backgrounds travel from around the world to receive our specialized treatments. Our absolute commitment is to provide a world-class clinical experience, delivering perfectly natural, long-lasting, and healthy smiles that change lives.",
+      "Equipped with the latest CAD/CAM dental design systems, laser whitening modules, and sapphire implant technologies, we combine medical authority with absolute patient comfort."
+    ],
+    "watchVideo": "Play Video",
+    "watchVideoSub": "Take a 1-min virtual tour of our luxury clinic",
+    "videoTitle": "Soufia Clinic Virtual Tour",
+    "videoSub": "Take a digital walk through our state-of-the-art facilities in Istanbul, Turkey.",
+    "accredited": "Accredited Surgeons",
+    "successRatio": "Success Ratio",
+    "painless": "Painless",
+    "sedation": "Sedation Care",
+    "description": "Founded by leading dental surgeons, Soufia Clinic has been transforming smiles across Istanbul for over 15 years.",
     "watchTour": "Watch Clinic Tour",
     "stats": [
       { "value": "15+", "label": "Years Experience" },
