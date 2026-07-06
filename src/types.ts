@@ -19,6 +19,23 @@ export interface ServiceItem {
   iconName: string;
 }
 
+export interface TreatmentSection {
+  heading: string;
+  items: string[];
+}
+
+export interface Treatment {
+  id: number;
+  slug: string;
+  title: string;
+  tagline: string;
+  cardDescription: string;
+  image: string;
+  intro: string;
+  highlights: string[];
+  sections: TreatmentSection[];
+}
+
 export interface BeforeAfterItem {
   id: number;
   title: string;

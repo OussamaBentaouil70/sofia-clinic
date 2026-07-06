@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { Menu, X, Phone, Globe } from 'lucide-react';
-import { CLINIC_PHONE, CLINIC_WHATSAPP } from '../data';
+import { Menu, X, Globe } from 'lucide-react';
+import { CLINIC_WHATSAPP } from '../data';
 import { motion, AnimatePresence } from 'motion/react';
 import WhatsAppIcon from './WhatsAppIcon';
 import { useTranslation } from '../contexts/LanguageContext';
@@ -30,9 +30,11 @@ export default function Header() {
 
   const navLinks = [
     { label: t.nav.about, href: '#about' },
+    { label: t.nav.treatments, href: '#treatments' },
     { label: t.nav.services, href: '#services' },
     { label: t.nav.beforeAfter, href: '#before-after' },
     { label: t.nav.specialty, href: '#specialty' },
+    { label: t.nav.team, href: '#team' },
     { label: t.nav.testimonials, href: '#testimonials' },
   ];
 
@@ -47,7 +49,7 @@ export default function Header() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? 'bg-white shadow-md py-3 border-b border-gray-100' : 'bg-black/25 backdrop-blur-sm py-4'
+          scrolled ? 'bg-gray-100 shadow-md py-3 border-b border-gray-200' : 'bg-black/25 backdrop-blur-sm py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,12 +57,15 @@ export default function Header() {
 
             {/* Logo */}
             <a href="#" className="flex flex-col select-none group">
-              <div className="flex items-baseline space-x-1">
-                <span className="text-2xl sm:text-3xl font-extrabold tracking-tight text-accent-magenta italic font-sans">Soufia</span>
-                <span className="text-xs font-bold tracking-[0.25em] text-[#FCB900] uppercase font-sans">Clinic</span>
+              <div className="h-[34px] sm:h-[41px] overflow-hidden">
+                <img src="/src/assets/images/sofia_logo.webp" alt={t.clinic.name} className="h-10 sm:h-12 w-auto object-contain" />
               </div>
-              <span className="text-[9px] text-gray-400 -mt-1 font-light tracking-wide group-hover:text-primary-blue transition-colors">
-                {t.clinic.tagline}
+              <span
+                className={`block text-[9px] sm:text-[10px] font-bold tracking-[0.3em] uppercase -mt-0.5 transition-colors duration-300 ${
+                  scrolled ? 'text-neutral-charcoal' : 'text-white/90'
+                }`}
+              >
+                Clinic
               </span>
             </a>
 
@@ -81,16 +86,6 @@ export default function Header() {
 
             {/* Actions */}
             <div className="hidden sm:flex items-center space-x-3">
-              <a
-                href={`tel:${CLINIC_PHONE.replace(/\s+/g, '')}`}
-                className={`flex items-center space-x-2 text-sm font-semibold transition-colors ${
-                  scrolled ? 'text-primary-blue hover:text-primary-blue-hover' : 'text-white hover:text-primary-blue-accent'
-                }`}
-              >
-                <Phone className="w-4 h-4" />
-                <span className="hidden md:inline">{CLINIC_PHONE}</span>
-              </a>
-
               {/* Language Switcher */}
               <div className="relative" ref={langRef}>
                 <button
@@ -196,10 +191,6 @@ export default function Header() {
                 </a>
               ))}
               <div className="pt-2 flex flex-col space-y-3">
-                <a href={`tel:${CLINIC_PHONE.replace(/\s+/g, '')}`} className="flex items-center space-x-2 text-sm font-semibold text-primary-blue">
-                  <Phone className="w-4 h-4" />
-                  <span>{CLINIC_PHONE}</span>
-                </a>
                 {/* Language buttons in mobile drawer */}
                 <div className="flex gap-2">
                   {languages.map((l) => (

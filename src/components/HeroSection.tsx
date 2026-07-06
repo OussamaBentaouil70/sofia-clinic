@@ -55,9 +55,9 @@ export default function HeroSection({ onRegister }: HeroSectionProps) {
   return (
     <section id="hero" className="relative min-h-screen pt-24 pb-16 flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img src="/src/assets/images/dental_hero_bg_1783270138708.jpg" alt="Soufia Clinic"
-          referrerPolicy="no-referrer" className="w-full h-full object-cover object-center transform scale-105 filter brightness-50" />
-        <div className="absolute inset-0 bg-gradient-to-r from-neutral-charcoal/80 via-neutral-charcoal/65 to-black/75" />
+        <img src="/src/assets/images/background_image.webp" alt="Soufia Clinic"
+          referrerPolicy="no-referrer" className="w-full h-full object-cover object-center transform scale-105 filter brightness-75" />
+        <div className="absolute inset-0 bg-gradient-to-r from-neutral-charcoal/60 via-neutral-charcoal/45 to-black/55" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -65,11 +65,6 @@ export default function HeroSection({ onRegister }: HeroSectionProps) {
 
           {/* Left: Hero text */}
           <div className="lg:col-span-7 text-white space-y-6">
-            <div className="inline-flex items-center space-x-2 bg-primary-blue/30 backdrop-blur-md px-4 py-1.5 rounded-full border border-primary-blue-accent/30">
-              <span className="w-2 h-2 rounded-full bg-[#FCB900] animate-pulse" />
-              <span className="text-xs sm:text-sm font-semibold tracking-wide uppercase">{t.hero.subtitle}</span>
-            </div>
-
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
               {t.hero.title}
             </h1>
@@ -145,7 +140,6 @@ export default function HeroSection({ onRegister }: HeroSectionProps) {
                 <div>
                   <label className="block text-sm font-bold text-neutral-charcoal mb-1">{t.form.message}</label>
                   <textarea name="message" value={formData.message} onChange={handleInputChange} rows={2}
-                    placeholder={t.form.messagePlaceholder}
                     className="w-full p-3 rounded-lg border border-gray-200 text-sm text-neutral-charcoal bg-white focus:border-primary-blue focus:ring-2 focus:ring-primary-blue/10 outline-none resize-none transition-all duration-200" />
                 </div>
 

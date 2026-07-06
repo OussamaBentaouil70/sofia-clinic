@@ -1,22 +1,23 @@
 {
   "clinic": {
     "name": "Soufia Clinic Dental Care",
-    "phone": "+90 (555) 000 00 00",
+    "phone": "+90 501 133 02 87",
     "tagline": "Soins Dentaires & Esthétique",
     "address": "Istanbul, Turquie",
-    "email": "info@soufia-clinic.com"
+    "email": "contact@soufia-clinic.com"
   },
   "nav": {
     "about": "À Propos",
+    "treatments": "Traitements",
     "services": "Services",
     "beforeAfter": "Avant & Après",
     "specialty": "Notre Spécialité",
+    "team": "Notre Équipe",
     "testimonials": "Témoignages",
     "whatsapp": "Whatsapp",
     "chatWhatsapp": "Chat sur WhatsApp"
   },
   "hero": {
-    "subtitle": "Votre Sourire & Votre Confiance Avant Tout.",
     "title": "Soins Dentaires Premium & Esthétique à la Clinique Soufia",
     "description": "Les traitements dentaires et cosmétiques les plus récents et les plus efficaces. Retrouvez votre beau sourire naturellement et en toute confiance avec les meilleurs experts dentaires d'Istanbul.",
     "whatsappLabel": "Chat via Whatsapp"
@@ -28,21 +29,21 @@
   "coreFeatures": [
     {
       "id": 1,
-      "title": "Personnel Professionnel",
-      "description": "Notre clinique comprend des chirurgiens dentaires certifiés, des orthodontistes compétents et des hygiénistes dentaires dévoués, tous engagés à fournir les soins dentaires de la plus haute qualité.",
-      "iconName": "Stethoscope"
+      "title": "Dentisterie en Une Journée",
+      "description": "Des procédures comme un traitement de canal & couronne, une extraction & implant, ou une greffe osseuse/sinus lift prennent normalement 3 à 5 visites. Nous pouvons le faire en une seule !",
+      "image": "/src/assets/images/service 1.webp"
     },
     {
       "id": 2,
-      "title": "Implant Dentaire Saphir",
-      "description": "Les techniques d'implants dentaires les plus modernes et efficaces, utilisant des piliers en saphir biocompatibles de haute qualité pour garantir une sensation naturelle et une stabilité à vie.",
-      "iconName": "Activity"
+      "title": "Consultation Spécialisée",
+      "description": "Nous mettons un point d'honneur à expliquer à nos patients l'état de leur santé dentaire. Nous vous guidons dans l'élaboration d'un plan de traitement efficace.",
+      "image": "/src/assets/images/sevice 2.webp"
     },
     {
       "id": 3,
-      "title": "Service d'Urgence",
-      "description": "Bien que les procédures dentaires à la Clinique Soufia soient extrêmement précises et sûres, nous sommes disponibles 24h/24 et 7j/7 pour les soins dentaires d'urgence.",
-      "iconName": "HeartPulse"
+      "title": "Rendez-vous en Ligne",
+      "description": "Remplissez le formulaire, indiquez-nous l'heure qui vous convient pour un rendez-vous et nous vous appellerons pour confirmation.",
+      "image": "/src/assets/images/service 3.webp"
     }
   ],
   "about": {
@@ -68,6 +69,234 @@
       { "value": "99.8%", "label": "Taux de Réussite" },
       { "value": "12k+", "label": "Patients Satisfaits" },
       { "value": "5★", "label": "Note Patients" }
+    ]
+  },
+  "treatments": {
+    "sectionLabel": "Soins Dentaires",
+    "title": "Découvrez Nos Traitements Dentaires",
+    "subtitle": "Cinq traitements avancés, certifiés JCI — chaque procédure est couverte par une garantie à vie et un programme de suivi dédié.",
+    "viewDetails": "Voir les Détails",
+    "close": "Fermer",
+    "highlightsLabel": "Points Clés",
+    "ctaLabel": "Poser une Question sur ce Traitement",
+    "items": [
+      {
+        "id": 1,
+        "slug": "dental-crowns",
+        "title": "Couronnes Dentaires",
+        "tagline": "Restauration Dentaire Complète",
+        "cardDescription": "Une coiffe en forme de dent qui restaure entièrement la forme, la solidité et l'apparence d'une dent abîmée.",
+        "image": "/src/assets/images/treatment-dental-crowns.jpg",
+        "intro": "Une couronne dentaire est une coiffe en forme de dent qui recouvre entièrement une dent endommagée au-dessus de la gencive, en reconstruisant sa forme, sa taille, sa solidité et son apparence. Fabriquées en céramiques biocompatibles telles que l'E-Max et la Zircone, nos couronnes fonctionnent et ressemblent exactement à des dents naturelles.",
+        "highlights": ["Durée de vie moyenne de 15 à 25 ans", "2 rendez-vous, espacés de 5 à 7 jours", "Garantie à vie", "Matériaux certifiés JCI"],
+        "sections": [
+          {
+            "heading": "Quand Avez-vous Besoin d'une Couronne ?",
+            "items": [
+              "Après un traitement de canal, lorsque la dent devient fragile",
+              "Obturations importantes couvrant plus de 50 % de la dent",
+              "Fissures ou fractures sévères",
+              "Dents usées par le grincement",
+              "Pour compléter une restauration sur implant"
+            ]
+          },
+          {
+            "heading": "Choisir le Bon Matériau",
+            "items": [
+              "E-Max (dents antérieures) : l'option la plus translucide, imite l'émail naturel, résistante aux taches, résistance de 400 MPa, garantie de 15 à 20 ans — idéale pour la zone visible du sourire",
+              "Zircone (dents postérieures) : extrêmement durable avec une résistance de 1200+ MPa, résistante aux éclats, réduction dentaire minimale, garantie de 20 à 25 ans — idéale pour les molaires et le bruxisme"
+            ]
+          },
+          {
+            "heading": "Processus de Traitement",
+            "items": [
+              "Premier rendez-vous : sous anesthésie locale, la dent abîmée est remodelée, une empreinte numérique est prise et une couronne temporaire est posée",
+              "Deuxième rendez-vous (5 à 7 jours plus tard) : la couronne définitive est posée, ajustée pour l'occlusion et la couleur, puis scellée de façon permanente"
+            ]
+          },
+          {
+            "heading": "Entretenir Votre Couronne",
+            "items": [
+              "Maintenir une hygiène bucco-dentaire quotidienne",
+              "Porter une gouttière nocturne en cas de bruxisme",
+              "Éviter de mordre des aliments très durs",
+              "Poursuivre des contrôles dentaires réguliers"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "slug": "dental-implants",
+        "title": "Implants Dentaires",
+        "tagline": "Remplacement Dentaire Permanent",
+        "cardDescription": "Des piliers en titane qui remplacent définitivement les dents manquantes, restaurant une morsure et un sourire naturels.",
+        "image": "/src/assets/images/treatment-dental-implants.jpg",
+        "intro": "Les implants dentaires sont la référence pour remplacer les dents manquantes. Un pilier en titane est placé chirurgicalement dans l'os de la mâchoire, où il fusionne naturellement pour créer une base permanente et stable pour une couronne en porcelaine sur mesure. Nous utilisons des systèmes d'implants suisses et suédois haut de gamme avec un taux de succès de plus de 98 %.",
+        "highlights": ["Taux de succès de 98 %+", "Plus de 90 % de la force de morsure naturelle restaurée", "Dents temporaires disponibles le jour même", "Garantie à vie"],
+        "sections": [
+          {
+            "heading": "Pourquoi les Implants Surpassent les Prothèses Amovibles",
+            "items": [
+              "Préviennent la détérioration de l'os de la mâchoire grâce à une stimulation naturelle",
+              "Une solution permanente conçue pour durer toute la vie",
+              "Restaurent plus de 90 % de la force de morsure naturelle pour une alimentation normale",
+              "Restent fixes sans glisser",
+              "Offrent une esthétique qui correspond à vos dents naturelles"
+            ]
+          },
+          {
+            "heading": "Options de Traitement",
+            "items": [
+              "Implant Unitaire : 3 à 6 mois pour être complété, le choix le plus économique à long terme avec un taux de succès de 98 %",
+              "All-on-4 / All-on-6 : remplace une arcade dentaire complète avec seulement 4 à 6 implants, avec des dents temporaires posées le jour même"
+            ]
+          },
+          {
+            "heading": "La Procédure en Trois Étapes",
+            "items": [
+              "Jour 1 — Pose chirurgicale : l'implant en titane est inséré sous anesthésie locale et une dent temporaire est posée immédiatement",
+              "3 à 6 mois — Ostéointégration : l'os fusionne naturellement avec l'implant (4 à 6 mois pour la mâchoire supérieure, 3 à 4 mois pour l'inférieure)",
+              "Étape finale — Pose de la couronne : une couronne en porcelaine sur mesure est fixée une fois l'implant totalement intégré"
+            ]
+          },
+          {
+            "heading": "Êtes-vous Éligible ?",
+            "items": [
+              "Volume osseux suffisant (greffe osseuse disponible si nécessaire)",
+              "Gencives saines, sans maladie active",
+              "Non-fumeur ou prêt à arrêter pendant la cicatrisation",
+              "Bon état de santé général (diabète contrôlé accepté)"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "slug": "dental-veneers",
+        "title": "Facettes Dentaires",
+        "tagline": "Transformation Complète du Sourire",
+        "cardDescription": "De fines coquilles en céramique sur mesure qui transforment la forme, la couleur et l'alignement de votre sourire.",
+        "image": "/src/assets/images/treatment-dental-veneers.jpg",
+        "intro": "Les facettes en porcelaine sont de fines coquilles céramiques, de seulement 0,3 à 0,5 mm, fabriquées sur mesure pour recouvrir la surface avant de vos dents. Elles offrent une approche plus conservatrice de l'amélioration du sourire que les couronnes, en préservant davantage la structure naturelle de la dent.",
+        "highlights": ["Seulement 0,3 à 0,5 mm d'épaisseur", "2 visites, espacées de 5 à 7 jours", "95 % durent plus de 10 ans", "Garantie à vie"],
+        "sections": [
+          {
+            "heading": "Ce que les Facettes Peuvent Corriger",
+            "items": [
+              "Décoloration : taches permanentes dues à la tétracycline, la fluorose ou un traitement de canal",
+              "Éclats et usure : réparation des bords usés et reconstruction de la longueur de la dent",
+              "Espaces et écarts : fermeture de petits espaces sans orthodontie",
+              "Léger désalignement : rendre des dents légèrement de travers apparemment droites"
+            ]
+          },
+          {
+            "heading": "Processus de Traitement",
+            "items": [
+              "Visite 1 : préparation minimale de l'émail, empreintes numériques et pose de facettes temporaires",
+              "Visite 2 (5 à 7 jours plus tard) : collage permanent avec un adhésif de la couleur de la dent et ajustements finaux"
+            ]
+          },
+          {
+            "heading": "Combien de Temps Durent les Facettes ?",
+            "items": [
+              "95 % des facettes sont encore en place après 10 ans",
+              "85 % sont encore en place après 15 ans",
+              "Une hygiène quotidienne, éviter les objets durs et des contrôles réguliers prolongent encore leur durée de vie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "slug": "hollywood-smile",
+        "title": "Hollywood Smile",
+        "tagline": "Relooking Complet du Sourire",
+        "cardDescription": "Un relooking complet du sourire alliant art et science pour des dents parfaitement alignées et éclatantes de blancheur.",
+        "image": "/src/assets/images/treatment-hollywood-smile.jpg",
+        "intro": "Le Hollywood Smile est un relooking complet du sourire qui allie art et science pour créer des dents parfaitement alignées et éclatantes de blancheur, tout en gardant un aspect totalement naturel. En suivant le nombre d'or et une teinte d'un blanc éclatant, il offre un effet orthodontique instantané sans appareil dentaire.",
+        "highlights": ["16 à 20 facettes premium", "Relooking complet en 5 à 7 jours", "Garantie de 15 à 25 ans", "Digital Smile Design inclus"],
+        "sections": [
+          {
+            "heading": "Ce qui Fait un Sourire « Hollywood »",
+            "items": [
+              "Une symétrie parfaite suivant les principes du nombre d'or",
+              "Une teinte d'un blanc éclatant (généralement A1 ou B1)",
+              "Une translucidité naturelle qui imite l'émail réel",
+              "Un effet orthodontique instantané sans appareil dentaire"
+            ]
+          },
+          {
+            "heading": "Le Parcours en 7 Jours",
+            "items": [
+              "Jour 1 : consultation Digital Smile Design avec imagerie 3D, analyse faciale et choix de la teinte",
+              "Jours 2-3 : préparation dentaire de précision avec un retrait minimal, facettes temporaires posées immédiatement",
+              "Jours 4-6 : vos facettes sur mesure sont façonnées à la main par un maître céramiste utilisant du disilicate de lithium E-Max",
+              "Jour 7 : collage final et dévoilement du sourire"
+            ]
+          },
+          {
+            "heading": "Options de Matériaux",
+            "items": [
+              "E-Max (recommandé) : la translucidité la plus naturelle, résistance de 400 MPa, garantie de 15 à 20 ans",
+              "Zircone (résistance maximale) : quasiment indestructible, garantie de 20 à 25 ans"
+            ]
+          },
+          {
+            "heading": "Ce qui est Inclus",
+            "items": [
+              "16 à 20 facettes premium",
+              "Digital Smile Design",
+              "Facettes temporaires",
+              "Nettoyage dentaire professionnel",
+              "Correspondance de teinte personnalisée",
+              "Kit de soins post-traitement"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "slug": "teeth-whitening",
+        "title": "Blanchiment Dentaire",
+        "tagline": "Résultats Professionnels et Éclatants",
+        "cardDescription": "Un blanchiment supervisé par un dentiste qui éclaircit les dents de 6 à 10 teintes en une seule séance de 60 à 90 minutes.",
+        "image": "/src/assets/images/treatment-teeth-whitening.jpg",
+        "intro": "Notre blanchiment professionnel en cabinet utilise des agents blanchissants de qualité pharmaceutique (35 à 40 % de peroxyde d'hydrogène) pour éclaircir les dents de 6 à 10 teintes en seulement 60 à 90 minutes — bien au-delà de ce que les kits en vente libre peuvent offrir, et entièrement supervisé par un dentiste pour votre confort et votre sécurité.",
+        "highlights": ["6 à 10 teintes plus claires", "Résultats en 60 à 90 minutes", "Supervisé par un dentiste", "Résultats durables de 1 à 3 ans"],
+        "sections": [
+          {
+            "heading": "Professionnel vs. Kits à Domicile",
+            "items": [
+              "Professionnel : concentration de 35 à 40 %, résultats en 60 à 90 minutes, 6 à 10 teintes plus claires, supervision d'un dentiste et protection des gencives incluses",
+              "Kits à domicile : concentration de 3 à 10 %, 2 à 4 semaines d'application quotidienne, seulement 2 à 4 teintes plus claires, avec un risque plus élevé d'irritation des gencives et de résultats inégaux"
+            ]
+          },
+          {
+            "heading": "Le Processus de Blanchiment",
+            "items": [
+              "Étape 1 — Préparation : un nettoyage professionnel élimine la plaque, votre teinte est mesurée et les gencives sont protégées",
+              "Étape 2 — Application du gel : un gel professionnel est activé par une lumière LED bleue en cycles de 15 à 20 minutes",
+              "Étape 3 — Cycles multiples : le gel est réappliqué 3 à 4 fois pour éliminer progressivement les taches profondes"
+            ]
+          },
+          {
+            "heading": "Résultats Attendus selon le Type de Tache",
+            "items": [
+              "Taches de café/thé : 8 à 10 teintes plus claires",
+              "Taches jaunes/liées à l'âge : 6 à 8 teintes plus claires",
+              "Taches de tabac : 5 à 7 teintes plus claires"
+            ]
+          },
+          {
+            "heading": "Soins Post-Traitement — 48 Premières Heures Critiques",
+            "items": [
+              "Évitez tous les aliments et boissons tachants : café, thé, vin rouge, fruits rouges, sauce tomate",
+              "Les pores des dents restent ouverts durant cette période et absorbent facilement les taches"
+            ]
+          }
+        ]
+      }
     ]
   },
   "services": {
@@ -116,32 +345,12 @@
   "beforeAfter": {
     "sectionLabel": "Vraies Transformations",
     "title": "Résultats Avant & Après",
-    "description": "Faites glisser le curseur doré pour comparer les résultats avant et après traitement.",
+    "description": "De vraies transformations de sourire réalisées par notre équipe dentaire sur de vrais patients.",
     "ctaWhatsapp": "Consulter nos Experts sur WhatsApp",
-    "labelBefore": "AVANT le Traitement",
-    "labelAfter": "APRÈS (Beau Sourire)",
-    "cases": [
-      {
-        "id": 1,
-        "title": "Implants Dentaires Complets",
-        "description": "Restauration complète de la capacité masticatoire et esthétique naturelle avec des couronnes en zirconium premium.",
-        "beforeImg": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=70&w=600&h=450&blur=2",
-        "afterImg": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=600&h=450"
-      },
-      {
-        "id": 2,
-        "title": "Facettes Dentaires Saphir",
-        "description": "Correction des taches d'émail sévères et fermeture des espaces avec des facettes CAD/CAM sur mesure.",
-        "beforeImg": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=70&w=600&h=450&blur=1",
-        "afterImg": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&q=80&w=600&h=450"
-      },
-      {
-        "id": 3,
-        "title": "Blanchiment Laser des Dents",
-        "description": "Traitement de blanchiment sûr de 8 nuances avec la technologie laser froide bleue avancée et indolore.",
-        "beforeImg": "https://images.unsplash.com/photo-1512223792601-592a9809eed4?auto=format&fit=crop&q=70&w=600&h=450&blur=2",
-        "afterImg": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=600&h=450"
-      }
+    "images": [
+      "/src/assets/images/before_after_1.png",
+      "/src/assets/images/before_after_2.png",
+      "/src/assets/images/before_after_3.png"
     ]
   },
   "specialty": {
@@ -152,6 +361,18 @@
     "longDescription": "L'hôpital propose des services complets de pointe dispensés par des équipes cliniques expérimentées. Nous nous concentrons sur votre esthétique faciale personnelle et utilisons des matériaux et technologies éprouvés pour réaliser des transformations de sourire. Nos forfaits de soins premium comprennent un hébergement hôtelier de luxe, des transferts VIP privés et une année complète de suivi personnalisé.",
     "whatsappButton": "Chat via Whatsapp",
     "badges": ["Certifié ISO", "100% Garanti", "Sédation Sans Douleur"]
+  },
+  "team": {
+    "sectionLabel": "Notre Équipe",
+    "title": "Les Experts Dentaires Derrière Votre Sourire",
+    "subtitle": "Une équipe dévouée de dentistes agréés engagés pour votre confort, votre sécurité et vos résultats.",
+    "roleLabel": "Dentiste Agréé",
+    "items": [
+      { "id": 1, "name": "Dr. Leyla Hasaneyn", "image": "/src/assets/images/Dr_Leyla_Hasaneyn.png" },
+      { "id": 2, "name": "Dr. Uveys Kovara", "image": "/src/assets/images/Dr. Uveys Kovara.png" },
+      { "id": 3, "name": "Dr. Lin Makki", "image": "/src/assets/images/Dr. Lin MAKKİ.png" },
+      { "id": 4, "name": "Dr. Ümit Halim Demirel", "image": "/src/assets/images/Dr. Ümit Halim DEMİREL.png" }
+    ]
   },
   "testimonials": {
     "sectionLabel": "Avis Patients",
@@ -230,9 +451,11 @@
     "chatTooltip": "Discutez avec nous!",
     "links": [
       { "label": "À Propos", "href": "#about" },
+      { "label": "Traitements", "href": "#treatments" },
       { "label": "Services", "href": "#services" },
       { "label": "Avant & Après", "href": "#before-after" },
       { "label": "Notre Spécialité", "href": "#specialty" },
+      { "label": "Notre Équipe", "href": "#team" },
       { "label": "Témoignages", "href": "#testimonials" },
       { "label": "Consultation Gratuite", "href": "#consultation-form" }
     ]

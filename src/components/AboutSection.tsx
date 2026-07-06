@@ -1,11 +1,8 @@
-import { useState } from 'react';
-import { Play, X, Heart, Star, Sparkles } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { Heart, Star, Sparkles } from 'lucide-react';
 import { useTranslation } from '../contexts/LanguageContext';
 
 export default function AboutSection() {
   const { t } = useTranslation();
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
     <section id="about" className="py-20 bg-surface-warm/30 relative overflow-hidden">
@@ -28,18 +25,6 @@ export default function AboutSection() {
 
             <div className="space-y-4 text-sm sm:text-base text-neutral-gray font-light leading-relaxed">
               {t.about.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
-            </div>
-
-            <div className="pt-4">
-              <button onClick={() => setIsVideoOpen(true)} className="inline-flex items-center space-x-4 group cursor-pointer">
-                <div className="w-14 h-14 rounded-full bg-accent-magenta text-white flex items-center justify-center shadow-lg group-hover:bg-primary-blue group-hover:scale-105 transition-all duration-300">
-                  <Play className="w-5 h-5 fill-current ml-1" />
-                </div>
-                <div className="text-left">
-                  <span className="block text-sm font-bold text-neutral-charcoal group-hover:text-primary-blue transition-colors">{t.about.watchVideo}</span>
-                  <span className="block text-xs text-neutral-gray font-light">{t.about.watchVideoSub}</span>
-                </div>
-              </button>
             </div>
           </div>
 
@@ -85,35 +70,6 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
-
-      {/* Video Modal */}
-      <AnimatePresence>
-        {isVideoOpen && (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-4 backdrop-blur-md">
-            <motion.div initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.9, y: 20 }}
-              className="bg-neutral-charcoal rounded-2xl overflow-hidden shadow-2xl max-w-3xl w-full relative border border-gray-800">
-              <button onClick={() => setIsVideoOpen(false)}
-                className="absolute top-4 right-4 text-white hover:text-accent-magenta bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors z-10">
-                <X className="w-5 h-5" />
-              </button>
-              <div className="p-1">
-                <div className="relative aspect-video rounded-xl overflow-hidden">
-                  <iframe className="w-full h-full"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1"
-                    title={t.about.videoTitle} frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen />
-                </div>
-                <div className="p-4 text-white text-center">
-                  <h4 className="text-base font-bold">{t.about.videoTitle}</h4>
-                  <p className="text-xs text-gray-400 mt-1 font-light">{t.about.videoSub}</p>
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </section>
   );
 }

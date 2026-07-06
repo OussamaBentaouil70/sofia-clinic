@@ -1,7 +1,4 @@
-import { Stethoscope, Activity, HeartPulse, LucideIcon } from 'lucide-react';
 import { useTranslation } from '../contexts/LanguageContext';
-
-const iconMap: Record<string, LucideIcon> = { Stethoscope, Activity, HeartPulse };
 
 export default function CoreFeatures() {
   const { t } = useTranslation();
@@ -13,18 +10,15 @@ export default function CoreFeatures() {
         <p className="mt-6 text-sm sm:text-base md:text-lg text-neutral-gray font-light leading-relaxed">{t.overview.text}</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 pb-8">
-        {t.coreFeatures.map((feature) => {
-          const Icon = iconMap[feature.iconName] || Stethoscope;
-          return (
-            <div key={feature.id} className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-primary-blue/20 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center text-center group">
-              <div className="w-14 h-14 rounded-full bg-accent-magenta/10 text-accent-magenta flex items-center justify-center group-hover:bg-primary-blue/10 group-hover:text-primary-blue transition-colors duration-300">
-                <Icon className="w-6 h-6" />
-              </div>
-              <h3 className="text-lg font-bold text-neutral-charcoal mt-5">{feature.title}</h3>
-              <p className="text-sm text-neutral-gray mt-3 font-light leading-relaxed">{feature.description}</p>
+        {t.coreFeatures.map((feature) => (
+          <div key={feature.id} className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-primary-blue/20 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center text-center group">
+            <div className="w-24 h-24 flex items-center justify-center">
+              <img src={feature.image} alt={feature.title} className="w-full h-full object-contain" />
             </div>
-          );
-        })}
+            <h3 className="text-lg font-bold text-neutral-charcoal mt-5">{feature.title}</h3>
+            <p className="text-sm text-neutral-gray mt-3 font-light leading-relaxed">{feature.description}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

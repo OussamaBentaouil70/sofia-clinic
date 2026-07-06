@@ -6,8 +6,8 @@
 import { ServiceItem, BeforeAfterItem, Testimonial } from './types';
 
 export const CLINIC_NAME = "Soufia Clinic Dental Care";
-export const CLINIC_PHONE = "+90 (555) 000 00 00";
-export const CLINIC_WHATSAPP = "https://wa.me/905550000000";
+export const CLINIC_PHONE = "+90 501 133 02 87";
+export const CLINIC_WHATSAPP = "https://wa.me/905011330287";
 
 export const HERO_CONTENT = {
   subtitle: "Where Your Smile & Confidence Come First.",

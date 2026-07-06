@@ -8,9 +8,11 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import CoreFeatures from './components/CoreFeatures';
 import AboutSection from './components/AboutSection';
+import TreatmentsSection from './components/TreatmentsSection';
 import ServicesSection from './components/ServicesSection';
 import BeforeAfterSection from './components/BeforeAfterSection';
 import SpecialtySection from './components/SpecialtySection';
+import TeamSection from './components/TeamSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import StatsSection from './components/StatsSection';
 import ConsultationFormSection from './components/ConsultationFormSection';
@@ -62,6 +64,9 @@ export default function App() {
         {/* About clinic narrative with clinic tour video overlay */}
         <AboutSection />
 
+        {/* Dental care treatments grid with detail modal */}
+        <TreatmentsSection />
+
         {/* Support services grid */}
         <ServicesSection />
 
@@ -70,6 +75,9 @@ export default function App() {
 
         {/* Clinical specialties split showcase */}
         <SpecialtySection />
+
+        {/* Meet the team slider */}
+        <TeamSection />
 
         {/* Patient reviews carousel */}
         <TestimonialsSection />

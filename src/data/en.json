@@ -1,22 +1,23 @@
 {
   "clinic": {
     "name": "Soufia Clinic Dental Care",
-    "phone": "+90 (555) 000 00 00",
+    "phone": "+90 501 133 02 87",
     "tagline": "Dental Care & Aesthetics",
     "address": "Istanbul, Turkey",
-    "email": "info@soufia-clinic.com"
+    "email": "contact@soufia-clinic.com"
   },
   "nav": {
     "about": "About Us",
+    "treatments": "Treatments",
     "services": "Services",
     "beforeAfter": "Before & After",
     "specialty": "Our Specialty",
+    "team": "Our Team",
     "testimonials": "Testimonials",
     "whatsapp": "Whatsapp",
     "chatWhatsapp": "Chat on WhatsApp"
   },
   "hero": {
-    "subtitle": "Where Your Smile & Confidence Come First.",
     "title": "Premium Dental Care & Aesthetics at Soufia Clinic",
     "description": "The latest and most efficient dental and cosmetic treatments. Regrow your beautiful, healthy smile naturally and confidently with Istanbul's leading dental medical experts.",
     "whatsappLabel": "Chat via Whatsapp"
@@ -28,21 +29,21 @@
   "coreFeatures": [
     {
       "id": 1,
-      "title": "Professional Staff",
-      "description": "Our clinic includes board-certified dental surgeons, knowledgeable orthodontists, and dedicated dental hygienists, all committed to providing the highest standard of dental care.",
-      "iconName": "Stethoscope"
+      "title": "Same Day Dentistry",
+      "description": "Procedures such as a root canal & crown, extraction & implant, and bone graft/sinus lift normally take 3-5 visits. We can do it in one!",
+      "image": "/src/assets/images/service 1.webp"
     },
     {
       "id": 2,
-      "title": "Sapphire Dental Implant",
-      "description": "The most modern and efficient dental implant techniques, utilizing high-quality sapphire biocompatible abutments to guarantee a natural feeling and lifetime stability.",
-      "iconName": "Activity"
+      "title": "Specialist Consultation",
+      "description": "We take pride in explaining to our patients the status of their dental health. We guide you in developing an effective treatment plan.",
+      "image": "/src/assets/images/sevice 2.webp"
     },
     {
       "id": 3,
-      "title": "Emergency Service",
-      "description": "While dental procedures at Soufia Clinic are extremely precise and safe, we are available 24/7 for emergency dental care, and provide detailed post-operative instructions.",
-      "iconName": "HeartPulse"
+      "title": "Online Appointment",
+      "description": "Fill out the form, tell us your convenient time for an appointment and we will call you for confirmation.",
+      "image": "/src/assets/images/service 3.webp"
     }
   ],
   "about": {
@@ -68,6 +69,234 @@
       { "value": "99.8%", "label": "Success Rate" },
       { "value": "12k+", "label": "Happy Clients" },
       { "value": "5★", "label": "Patient Rating" }
+    ]
+  },
+  "treatments": {
+    "sectionLabel": "Dental Care",
+    "title": "Explore Our Dental Care Treatments",
+    "subtitle": "Five advanced, JCI-accredited treatments — every procedure backed by a lifetime warranty and a dedicated aftercare program.",
+    "viewDetails": "View Details",
+    "close": "Close",
+    "highlightsLabel": "Key Facts",
+    "ctaLabel": "Ask About This Treatment",
+    "items": [
+      {
+        "id": 1,
+        "slug": "dental-crowns",
+        "title": "Dental Crowns",
+        "tagline": "Complete Tooth Restoration",
+        "cardDescription": "A tooth-shaped cap that fully restores a damaged tooth's shape, strength, and appearance.",
+        "image": "/src/assets/images/treatment-dental-crowns.jpg",
+        "intro": "A dental crown is a tooth-shaped cap that completely covers a damaged tooth above the gum line, rebuilding its shape, size, strength, and appearance. Made from biocompatible ceramics such as E-Max and Zirconia, our crowns function and look exactly like natural teeth.",
+        "highlights": ["15-25 year average lifespan", "2 appointments, 5-7 days apart", "Lifetime warranty", "JCI-accredited materials"],
+        "sections": [
+          {
+            "heading": "When You Might Need a Crown",
+            "items": [
+              "After root canal therapy, when the tooth becomes fragile",
+              "Large fillings covering 50%+ of the tooth",
+              "Severe cracks or fractures",
+              "Teeth worn down from grinding",
+              "To complete an implant restoration"
+            ]
+          },
+          {
+            "heading": "Choosing the Right Material",
+            "items": [
+              "E-Max (front teeth): the most translucent option, mimics natural enamel, stain-resistant, 400 MPa strength, 15-20 year warranty — ideal for the visible smile zone",
+              "Zirconia (back teeth): extremely durable with 1200+ MPa bite-force resistance, chip-resistant, minimal tooth reduction, 20-25 year warranty — ideal for molars and heavy grinders"
+            ]
+          },
+          {
+            "heading": "Treatment Process",
+            "items": [
+              "First appointment: under local anaesthesia the damaged tooth is reshaped, a digital impression is taken, and a temporary crown is fitted",
+              "Second appointment (5-7 days later): the permanent crown is fitted, adjusted for bite and colour, then permanently cemented"
+            ]
+          },
+          {
+            "heading": "Caring for Your Crown",
+            "items": [
+              "Maintain daily oral hygiene",
+              "Wear a nightguard if you grind your teeth",
+              "Avoid biting extremely hard foods",
+              "Keep up regular dental check-ups"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "slug": "dental-implants",
+        "title": "Dental Implants",
+        "tagline": "Permanent Tooth Replacement",
+        "cardDescription": "Titanium posts that replace missing teeth permanently, restoring a natural bite and smile.",
+        "image": "/src/assets/images/treatment-dental-implants.jpg",
+        "intro": "Dental implants are the gold standard for replacing missing teeth. A titanium post is surgically placed into the jawbone, where it fuses naturally to create a permanent, stable foundation for a custom porcelain crown. We use premium Swiss and Swedish implant systems with 98%+ success rates.",
+        "highlights": ["98%+ success rate", "90%+ natural bite force restored", "Same-day temporary teeth available", "Lifetime warranty"],
+        "sections": [
+          {
+            "heading": "Why Implants Outperform Dentures",
+            "items": [
+              "Prevent jawbone deterioration through natural stimulation",
+              "A permanent solution designed to last a lifetime",
+              "Restore 90%+ of natural bite force for normal eating",
+              "Stay fixed in place without slipping",
+              "Achieve aesthetics that match your natural teeth"
+            ]
+          },
+          {
+            "heading": "Treatment Options",
+            "items": [
+              "Single Tooth Implant: 3-6 months to complete, the most economical long-term choice with a 98% success rate",
+              "All-on-4 / All-on-6: replaces a full arch of teeth using just 4-6 implants, with temporary teeth fitted the same day"
+            ]
+          },
+          {
+            "heading": "The Three-Stage Procedure",
+            "items": [
+              "Day 1 — Surgical placement: the titanium implant is inserted under local anaesthesia and a temporary tooth is fitted immediately",
+              "3-6 months — Osseointegration: the bone naturally fuses with the implant (4-6 months upper jaw, 3-4 months lower jaw)",
+              "Final stage — Crown placement: a custom porcelain crown is attached once the implant has fully integrated"
+            ]
+          },
+          {
+            "heading": "Are You a Candidate?",
+            "items": [
+              "Adequate jawbone volume (bone grafting available if needed)",
+              "Healthy gums, free of active disease",
+              "Non-smoker or willing to quit during healing",
+              "Generally good general health (controlled diabetes is acceptable)"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "slug": "dental-veneers",
+        "title": "Dental Veneers",
+        "tagline": "Complete Smile Transformation",
+        "cardDescription": "Wafer-thin custom ceramic shells that transform the shape, colour, and alignment of your smile.",
+        "image": "/src/assets/images/treatment-dental-veneers.jpg",
+        "intro": "Porcelain veneers are wafer-thin ceramic shells, just 0.3-0.5mm, custom-made to cover the front surface of your teeth. They offer a more conservative approach to smile improvement than crowns, preserving more of your natural tooth structure.",
+        "highlights": ["Only 0.3-0.5mm thick", "2 visits, 5-7 days apart", "95% survive 10 years", "Lifetime warranty"],
+        "sections": [
+          {
+            "heading": "What Veneers Can Correct",
+            "items": [
+              "Discolouration: permanent stains from tetracycline, fluorosis, or root canal treatment",
+              "Chips & wear: repairing worn edges and rebuilding tooth length",
+              "Gaps & spacing: closing small gaps without orthodontics",
+              "Minor misalignment: making slightly crooked teeth appear straight"
+            ]
+          },
+          {
+            "heading": "Treatment Process",
+            "items": [
+              "Visit 1: minimal enamel preparation, digital impressions, and temporary veneer placement",
+              "Visit 2 (5-7 days later): permanent bonding with tooth-coloured adhesive and final adjustments"
+            ]
+          },
+          {
+            "heading": "How Long Do Veneers Last?",
+            "items": [
+              "95% of veneers are still in place after 10 years",
+              "85% are still in place after 15 years",
+              "Daily hygiene, avoiding hard objects, and regular check-ups extend their life further"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "slug": "hollywood-smile",
+        "title": "Hollywood Smile",
+        "tagline": "Complete Smile Makeover",
+        "cardDescription": "A full smile makeover combining art and science for perfectly aligned, brilliantly white teeth.",
+        "image": "/src/assets/images/treatment-hollywood-smile.jpg",
+        "intro": "The Hollywood Smile is a complete smile makeover that combines art and science to create perfectly aligned, brilliantly white teeth that still look completely natural. Following the Golden Ratio and a brilliant white shade, it delivers an instant orthodontic effect without braces.",
+        "highlights": ["16-20 premium veneers", "Full makeover in 5-7 days", "15-25 year warranty", "Digital Smile Design included"],
+        "sections": [
+          {
+            "heading": "What Makes It a 'Hollywood' Smile",
+            "items": [
+              "Perfect symmetry following Golden Ratio principles",
+              "A brilliant white shade selection (typically A1 or B1)",
+              "Natural translucency that mimics real enamel",
+              "An instant orthodontic effect without braces"
+            ]
+          },
+          {
+            "heading": "The 7-Day Journey",
+            "items": [
+              "Day 1: Digital Smile Design consultation with 3D imaging, facial analysis, and shade selection",
+              "Days 2-3: precision tooth preparation with minimal removal, temporary veneers fitted immediately",
+              "Days 4-6: your custom veneers are hand-crafted by a master ceramist using E-Max Lithium Disilicate",
+              "Day 7: final bonding and smile reveal"
+            ]
+          },
+          {
+            "heading": "Material Options",
+            "items": [
+              "E-Max (recommended): the most natural translucency, 400 MPa strength, 15-20 year warranty",
+              "Zirconia (maximum strength): virtually indestructible, 20-25 year warranty"
+            ]
+          },
+          {
+            "heading": "What's Included",
+            "items": [
+              "16-20 premium veneers",
+              "Digital Smile Design",
+              "Temporary veneers",
+              "Professional teeth cleaning",
+              "Custom shade matching",
+              "Aftercare kit"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "slug": "teeth-whitening",
+        "title": "Teeth Whitening",
+        "tagline": "Professional, Brilliant Results",
+        "cardDescription": "Dentist-supervised whitening that lifts teeth 6-10 shades brighter in a single 60-90 minute session.",
+        "image": "/src/assets/images/treatment-teeth-whitening.jpg",
+        "intro": "Our professional in-office whitening uses pharmaceutical-grade bleaching agents (35-40% hydrogen peroxide) to lighten teeth by 6-10 shades in just 60-90 minutes — far beyond what over-the-counter kits can achieve, and fully dentist-supervised for comfort and safety.",
+        "highlights": ["6-10 shades lighter", "Results in 60-90 minutes", "Dentist-supervised", "Results last 1-3 years"],
+        "sections": [
+          {
+            "heading": "Professional vs. Home Kits",
+            "items": [
+              "Professional: 35-40% concentration, results in 60-90 minutes, 6-10 shades lighter, dentist supervision and gum protection included",
+              "Home kits: 3-10% concentration, 2-4 weeks of daily application, only 2-4 shades lighter, with a higher risk of gum irritation and uneven results"
+            ]
+          },
+          {
+            "heading": "The Whitening Process",
+            "items": [
+              "Step 1 — Preparation: a professional cleaning removes plaque, your shade is measured, and gums are protected",
+              "Step 2 — Gel application: professional-strength gel is activated with a blue LED light in 15-20 minute cycles",
+              "Step 3 — Multiple cycles: the gel is reapplied 3-4 times to progressively lift deeper stains"
+            ]
+          },
+          {
+            "heading": "Expected Results by Stain Type",
+            "items": [
+              "Coffee/tea stains: 8-10 shades lighter",
+              "Yellow/age-related stains: 6-8 shades lighter",
+              "Smoking stains: 5-7 shades lighter"
+            ]
+          },
+          {
+            "heading": "Aftercare — Critical First 48 Hours",
+            "items": [
+              "Avoid all staining foods and drinks: coffee, tea, red wine, berries, tomato sauce",
+              "Teeth pores remain open during this period and readily absorb stains"
+            ]
+          }
+        ]
+      }
     ]
   },
   "services": {
@@ -116,32 +345,12 @@
   "beforeAfter": {
     "sectionLabel": "Real Transformations",
     "title": "Before & After Results",
-    "description": "Drag the gold slider left and right to compare actual pre-treatment and post-treatment smile results.",
+    "description": "Real smile transformations achieved by our dental team on actual patients.",
     "ctaWhatsapp": "Consult our Experts on WhatsApp",
-    "labelBefore": "BEFORE Treatment",
-    "labelAfter": "AFTER (Beautiful Smile)",
-    "cases": [
-      {
-        "id": 1,
-        "title": "Full Arch Dental Implants",
-        "description": "Restored full smile chewing capability and outstanding natural aesthetics with premium zirconium crowns.",
-        "beforeImg": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=70&w=600&h=450&blur=2",
-        "afterImg": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=600&h=450"
-      },
-      {
-        "id": 2,
-        "title": "Sapphire Dental Veneers",
-        "description": "Correction of severe enamel staining and gap closure with custom CAD/CAM veneers.",
-        "beforeImg": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=70&w=600&h=450&blur=1",
-        "afterImg": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&q=80&w=600&h=450"
-      },
-      {
-        "id": 3,
-        "title": "Laser Teeth Whitening",
-        "description": "Safe 8-shade brightening treatment with advanced painless cold-blue laser technology.",
-        "beforeImg": "https://images.unsplash.com/photo-1512223792601-592a9809eed4?auto=format&fit=crop&q=70&w=600&h=450&blur=2",
-        "afterImg": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=600&h=450"
-      }
+    "images": [
+      "/src/assets/images/before_after_1.png",
+      "/src/assets/images/before_after_2.png",
+      "/src/assets/images/before_after_3.png"
     ]
   },
   "specialty": {
@@ -152,6 +361,18 @@
     "longDescription": "The hospital provides comprehensive, state-of-the-art services delivered by experienced clinical teams. We focus on your personal facial aesthetics and use proven materials and technology to achieve transformative smile makeovers. Our premium care packages include deluxe hotel accommodation, VIP private transfers, and a full year of customized aftercare – all designed to make your medical journey safe, painless, comfortable, and successful.",
     "whatsappButton": "Chat via Whatsapp",
     "badges": ["ISO Certified", "100% Guaranteed", "Painless Sedation"]
+  },
+  "team": {
+    "sectionLabel": "Meet Our Team",
+    "title": "The Dental Experts Behind Your Smile",
+    "subtitle": "A dedicated team of registered dentists committed to your comfort, safety, and results.",
+    "roleLabel": "Registered Dentist",
+    "items": [
+      { "id": 1, "name": "Dr. Leyla Hasaneyn", "image": "/src/assets/images/Dr_Leyla_Hasaneyn.png" },
+      { "id": 2, "name": "Dr. Uveys Kovara", "image": "/src/assets/images/Dr. Uveys Kovara.png" },
+      { "id": 3, "name": "Dr. Lin Makki", "image": "/src/assets/images/Dr. Lin MAKKİ.png" },
+      { "id": 4, "name": "Dr. Ümit Halim Demirel", "image": "/src/assets/images/Dr. Ümit Halim DEMİREL.png" }
+    ]
   },
   "testimonials": {
     "sectionLabel": "Patient Reviews",
@@ -230,9 +451,11 @@
     "chatTooltip": "Chat with us!",
     "links": [
       { "label": "About Us", "href": "#about" },
+      { "label": "Treatments", "href": "#treatments" },
       { "label": "Services", "href": "#services" },
       { "label": "Before & After", "href": "#before-after" },
       { "label": "Our Specialty", "href": "#specialty" },
+      { "label": "Our Team", "href": "#team" },
       { "label": "Testimonials", "href": "#testimonials" },
       { "label": "Free Consultation", "href": "#consultation-form" }
     ]

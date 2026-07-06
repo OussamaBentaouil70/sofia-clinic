@@ -98,7 +98,6 @@ export default function ConsultationFormSection({ onRegister }: ConsultationForm
               <div>
                 <label className="block text-sm font-bold text-neutral-charcoal mb-1.5">{t.form.message}</label>
                 <textarea name="message" value={formData.message} onChange={handleInputChange} rows={4}
-                  placeholder={t.form.messagePlaceholder}
                   className="w-full p-4 rounded-lg border border-gray-200 text-sm text-neutral-charcoal bg-white focus:border-primary-blue focus:ring-2 focus:ring-primary-blue/10 outline-none resize-none transition-all duration-200" />
               </div>
 

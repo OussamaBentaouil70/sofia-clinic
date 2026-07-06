@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CLINIC_PHONE, CLINIC_WHATSAPP } from '../data';
-import { Send, Phone, MapPin, Mail, ChevronRight, AlertCircle } from 'lucide-react';
+import { Send, Phone, Mail, ChevronRight, AlertCircle } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
 import { useTranslation } from '../contexts/LanguageContext';
 
@@ -50,20 +50,14 @@ export default function Footer({ onRegister }: FooterProps) {
           {/* Brand */}
           <div className="lg:col-span-4 space-y-5">
             <a href="#" className="flex flex-col select-none">
-              <div className="flex items-baseline space-x-1">
-                <span className="text-3xl font-extrabold tracking-tight text-accent-magenta italic font-sans">Soufia</span>
-                <span className="text-sm font-bold tracking-[0.25em] text-[#FCB900] uppercase font-sans">Clinic</span>
-              </div>
-              <span className="text-[10px] text-gray-400 -mt-1 font-light tracking-wide">{t.clinic.tagline}</span>
+              <img src="/src/assets/images/sofia_logo.webp" alt={t.clinic.name} className="h-12 w-auto object-contain" />
+              <span className="text-[10px] text-gray-400 mt-1 font-light tracking-wide">{t.clinic.tagline}</span>
             </a>
             <p className="text-xs sm:text-sm text-gray-400 font-light leading-relaxed">{t.footer.description}</p>
             <div className="space-y-2 pt-2 text-xs sm:text-sm text-gray-300 font-light">
               <a href={`tel:${CLINIC_PHONE.replace(/\s+/g, '')}`} className="flex items-center space-x-2 hover:text-primary-blue-accent transition-colors">
                 <Phone className="w-4 h-4 text-accent-magenta" /><span>{CLINIC_PHONE}</span>
               </a>
-              <div className="flex items-center space-x-2">
-                <MapPin className="w-4 h-4 text-accent-magenta" /><span>{t.clinic.address}</span>
-              </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-accent-magenta" /><span>{t.clinic.email}</span>
               </div>
