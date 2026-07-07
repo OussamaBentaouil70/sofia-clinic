@@ -3,7 +3,7 @@ import { useTranslation } from '../contexts/LanguageContext';
 export default function CoreFeatures() {
   const { t } = useTranslation();
   return (
-    <section className="relative z-20 -mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="overview" className="relative z-20 -mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 sm:p-10 text-center max-w-4xl mx-auto">
         <h2 className="text-2xl sm:text-3xl font-extrabold text-neutral-charcoal tracking-tight">{t.overview.title}</h2>
         <div className="w-16 h-1 bg-primary-blue mx-auto mt-4 rounded-full" />
