@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { CLINIC_PHONE, CLINIC_WHATSAPP } from '../data';
-import { Send, Phone, Mail, ChevronRight, AlertCircle } from 'lucide-react';
+import { Send, Phone, Mail, ChevronRight, AlertCircle, Loader2 } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
 import { useTranslation } from '../contexts/LanguageContext';
 
 interface FooterProps {
-  onRegister: (data: { name: string; phone: string; message: string; email: string }) => void;
+  onRegister: (data: { name: string; phone: string; message: string; email: string }) => Promise<void>;
 }
 
 export default function Footer({ onRegister }: FooterProps) {
@@ -13,6 +13,7 @@ export default function Footer({ onRegister }: FooterProps) {
   const [formData, setFormData] = useState({ name: '', phone: '', message: '' });
   const [errors, setErrors] = useState<Partial<typeof formData>>({});
   const [phoneCode, setPhoneCode] = useState('+90');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const countryCodes = [
     { code: '+90', flag: '🇹🇷' }, { code: '+44', flag: '🇬🇧' }, { code: '+1', flag: '🇺🇸' },
@@ -27,12 +28,17 @@ export default function Footer({ onRegister }: FooterProps) {
     return Object.keys(e).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (validate()) {
-      onRegister({ name: formData.name, phone: `${phoneCode} ${formData.phone}`, message: formData.message, email: 'quick-contact@soufia-clinic.com' });
-      setFormData({ name: '', phone: '', message: '' });
-      setErrors({});
+    if (validate() && !isSubmitting) {
+      setIsSubmitting(true);
+      try {
+        await onRegister({ name: formData.name, phone: `${phoneCode} ${formData.phone}`, message: formData.message, email: 'quick-contact@soufia-clinic.com' });
+        setFormData({ name: '', phone: '', message: '' });
+        setErrors({});
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -50,7 +56,7 @@ export default function Footer({ onRegister }: FooterProps) {
           {/* Brand */}
           <div className="lg:col-span-4 space-y-5">
             <a href="#" className="flex flex-col select-none">
-              <img src="/src/assets/images/sofia_logo.webp" alt={t.clinic.name} className="h-12 w-auto object-contain" />
+              <img src="/images/sofia_logo.webp" alt={t.clinic.name} className="h-12 w-auto object-contain" />
               <span className="text-[10px] text-gray-400 mt-1 font-light tracking-wide">{t.clinic.tagline}</span>
             </a>
             <p className="text-xs sm:text-sm text-gray-400 font-light leading-relaxed">{t.footer.description}</p>
@@ -101,9 +107,10 @@ export default function Footer({ onRegister }: FooterProps) {
               <textarea name="message" value={formData.message} onChange={handleInputChange} rows={2}
                 placeholder={t.form.yourMessage}
                 className="w-full p-3 rounded-lg border border-white/10 text-xs text-white bg-white/5 placeholder-gray-500 outline-none focus:border-primary-blue resize-none transition-all" />
-              <button type="submit"
-                className="w-full h-10 bg-accent-magenta hover:bg-accent-magenta-hover text-white text-xs font-bold rounded-lg transition-all duration-200 flex items-center justify-center space-x-1.5 cursor-pointer">
-                <Send className="w-3.5 h-3.5" /><span>{t.form.contactSubmit}</span>
+              <button type="submit" disabled={isSubmitting}
+                className="w-full h-10 bg-accent-magenta hover:bg-accent-magenta-hover disabled:opacity-70 disabled:cursor-not-allowed text-white text-xs font-bold rounded-lg transition-all duration-200 flex items-center justify-center space-x-1.5 cursor-pointer">
+                {isSubmitting ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Send className="w-3.5 h-3.5" />}
+                <span>{isSubmitting ? t.form.sending : t.form.contactSubmit}</span>
               </button>
             </form>
           </div>

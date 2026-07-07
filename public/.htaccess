@@ -1,0 +1,18 @@
+# Block direct access to dotfiles (.env, .git, etc.)
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
+RewriteEngine On
+
+# Let real files, the api/ folder, and the vendor/ folder pass through untouched
+RewriteCond %{REQUEST_URI} ^/api/ [OR]
+RewriteCond %{REQUEST_URI} ^/vendor/
+RewriteRule ^ - [L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Everything else (e.g. /fr) falls back to the SPA entry point
+RewriteRule ^ index.html [L]

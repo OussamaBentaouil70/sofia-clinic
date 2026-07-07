@@ -31,19 +31,19 @@
       "id": 1,
       "title": "Dentisterie en Une Journée",
       "description": "Des procédures comme un traitement de canal & couronne, une extraction & implant, ou une greffe osseuse/sinus lift prennent normalement 3 à 5 visites. Nous pouvons le faire en une seule !",
-      "image": "/src/assets/images/service 1.webp"
+      "image": "/images/service 1.webp"
     },
     {
       "id": 2,
       "title": "Consultation Spécialisée",
       "description": "Nous mettons un point d'honneur à expliquer à nos patients l'état de leur santé dentaire. Nous vous guidons dans l'élaboration d'un plan de traitement efficace.",
-      "image": "/src/assets/images/sevice 2.webp"
+      "image": "/images/sevice 2.webp"
     },
     {
       "id": 3,
       "title": "Rendez-vous en Ligne",
       "description": "Remplissez le formulaire, indiquez-nous l'heure qui vous convient pour un rendez-vous et nous vous appellerons pour confirmation.",
-      "image": "/src/assets/images/service 3.webp"
+      "image": "/images/service 3.webp"
     }
   ],
   "about": {
@@ -86,7 +86,7 @@
         "title": "Couronnes Dentaires",
         "tagline": "Restauration Dentaire Complète",
         "cardDescription": "Une coiffe en forme de dent qui restaure entièrement la forme, la solidité et l'apparence d'une dent abîmée.",
-        "image": "/src/assets/images/treatment-dental-crowns.jpg",
+        "image": "/images/treatment-dental-crowns.jpg",
         "intro": "Une couronne dentaire est une coiffe en forme de dent qui recouvre entièrement une dent endommagée au-dessus de la gencive, en reconstruisant sa forme, sa taille, sa solidité et son apparence. Fabriquées en céramiques biocompatibles telles que l'E-Max et la Zircone, nos couronnes fonctionnent et ressemblent exactement à des dents naturelles.",
         "highlights": ["Durée de vie moyenne de 15 à 25 ans", "2 rendez-vous, espacés de 5 à 7 jours", "Garantie à vie", "Matériaux certifiés JCI"],
         "sections": [
@@ -131,7 +131,7 @@
         "title": "Implants Dentaires",
         "tagline": "Remplacement Dentaire Permanent",
         "cardDescription": "Des piliers en titane qui remplacent définitivement les dents manquantes, restaurant une morsure et un sourire naturels.",
-        "image": "/src/assets/images/treatment-dental-implants.jpg",
+        "image": "/images/treatment-dental-implants.jpg",
         "intro": "Les implants dentaires sont la référence pour remplacer les dents manquantes. Un pilier en titane est placé chirurgicalement dans l'os de la mâchoire, où il fusionne naturellement pour créer une base permanente et stable pour une couronne en porcelaine sur mesure. Nous utilisons des systèmes d'implants suisses et suédois haut de gamme avec un taux de succès de plus de 98 %.",
         "highlights": ["Taux de succès de 98 %+", "Plus de 90 % de la force de morsure naturelle restaurée", "Dents temporaires disponibles le jour même", "Garantie à vie"],
         "sections": [
@@ -177,7 +177,7 @@
         "title": "Facettes Dentaires",
         "tagline": "Transformation Complète du Sourire",
         "cardDescription": "De fines coquilles en céramique sur mesure qui transforment la forme, la couleur et l'alignement de votre sourire.",
-        "image": "/src/assets/images/treatment-dental-veneers.jpg",
+        "image": "/images/treatment-dental-veneers.jpg",
         "intro": "Les facettes en porcelaine sont de fines coquilles céramiques, de seulement 0,3 à 0,5 mm, fabriquées sur mesure pour recouvrir la surface avant de vos dents. Elles offrent une approche plus conservatrice de l'amélioration du sourire que les couronnes, en préservant davantage la structure naturelle de la dent.",
         "highlights": ["Seulement 0,3 à 0,5 mm d'épaisseur", "2 visites, espacées de 5 à 7 jours", "95 % durent plus de 10 ans", "Garantie à vie"],
         "sections": [
@@ -213,7 +213,7 @@
         "title": "Hollywood Smile",
         "tagline": "Relooking Complet du Sourire",
         "cardDescription": "Un relooking complet du sourire alliant art et science pour des dents parfaitement alignées et éclatantes de blancheur.",
-        "image": "/src/assets/images/treatment-hollywood-smile.jpg",
+        "image": "/images/treatment-hollywood-smile.jpg",
         "intro": "Le Hollywood Smile est un relooking complet du sourire qui allie art et science pour créer des dents parfaitement alignées et éclatantes de blancheur, tout en gardant un aspect totalement naturel. En suivant le nombre d'or et une teinte d'un blanc éclatant, il offre un effet orthodontique instantané sans appareil dentaire.",
         "highlights": ["16 à 20 facettes premium", "Relooking complet en 5 à 7 jours", "Garantie de 15 à 25 ans", "Digital Smile Design inclus"],
         "sections": [
@@ -261,7 +261,7 @@
         "title": "Blanchiment Dentaire",
         "tagline": "Résultats Professionnels et Éclatants",
         "cardDescription": "Un blanchiment supervisé par un dentiste qui éclaircit les dents de 6 à 10 teintes en une seule séance de 60 à 90 minutes.",
-        "image": "/src/assets/images/treatment-teeth-whitening.jpg",
+        "image": "/images/treatment-teeth-whitening.jpg",
         "intro": "Notre blanchiment professionnel en cabinet utilise des agents blanchissants de qualité pharmaceutique (35 à 40 % de peroxyde d'hydrogène) pour éclaircir les dents de 6 à 10 teintes en seulement 60 à 90 minutes — bien au-delà de ce que les kits en vente libre peuvent offrir, et entièrement supervisé par un dentiste pour votre confort et votre sécurité.",
         "highlights": ["6 à 10 teintes plus claires", "Résultats en 60 à 90 minutes", "Supervisé par un dentiste", "Résultats durables de 1 à 3 ans"],
         "sections": [
@@ -348,9 +348,9 @@
     "description": "De vraies transformations de sourire réalisées par notre équipe dentaire sur de vrais patients.",
     "ctaWhatsapp": "Consulter nos Experts sur WhatsApp",
     "images": [
-      "/src/assets/images/before_after_1.png",
-      "/src/assets/images/before_after_2.png",
-      "/src/assets/images/before_after_3.png"
+      "/images/before_after_1.png",
+      "/images/before_after_2.png",
+      "/images/before_after_3.png"
     ]
   },
   "specialty": {
@@ -368,10 +368,10 @@
     "subtitle": "Une équipe dévouée de dentistes agréés engagés pour votre confort, votre sécurité et vos résultats.",
     "roleLabel": "Dentiste Agréé",
     "items": [
-      { "id": 1, "name": "Dr. Leyla Hasaneyn", "image": "/src/assets/images/Dr_Leyla_Hasaneyn.png" },
-      { "id": 2, "name": "Dr. Uveys Kovara", "image": "/src/assets/images/Dr. Uveys Kovara.png" },
-      { "id": 3, "name": "Dr. Lin Makki", "image": "/src/assets/images/Dr. Lin MAKKİ.png" },
-      { "id": 4, "name": "Dr. Ümit Halim Demirel", "image": "/src/assets/images/Dr. Ümit Halim DEMİREL.png" }
+      { "id": 1, "name": "Dr. Leyla Hasaneyn", "image": "/images/Dr_Leyla_Hasaneyn.png" },
+      { "id": 2, "name": "Dr. Uveys Kovara", "image": "/images/Dr. Uveys Kovara.png" },
+      { "id": 3, "name": "Dr. Lin Makki", "image": "/images/Dr. Lin MAKKİ.png" },
+      { "id": 4, "name": "Dr. Ümit Halim Demirel", "image": "/images/Dr. Ümit Halim DEMİREL.png" }
     ]
   },
   "testimonials": {
@@ -429,6 +429,7 @@
     "message": "Message / Traitement Souhaité",
     "messagePlaceholder": "Décrivez vos objectifs dentaires (ex. implants, blanchiment, alignement)...",
     "submit": "Prendre Rendez-vous",
+    "sending": "Envoi en cours...",
     "contactSubmit": "Nous Contacter",
     "secure": "100% Sécurisé & Confidentiel",
     "yourName": "Votre Nom",
@@ -463,6 +464,15 @@
   "success": {
     "title": "Réservation Confirmée!",
     "subtitle": "Votre demande de consultation a été reçue.",
-    "close": "Fermer"
+    "close": "Fermer",
+    "bookingReference": "Référence de Réservation",
+    "patientName": "Nom du Patient",
+    "contactNumber": "Numéro de Contact",
+    "requestDate": "Date de la Demande",
+    "clinicCenter": "Centre Clinique",
+    "istanbulFacility": "Établissement d'Istanbul",
+    "notes": "Notes / Symptômes",
+    "backHome": "Retour à l'Accueil",
+    "whatsappCta": "Discuter sur WhatsApp"
   }
 }

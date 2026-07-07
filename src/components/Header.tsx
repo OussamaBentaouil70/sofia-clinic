@@ -58,7 +58,7 @@ export default function Header() {
             {/* Logo */}
             <a href="#" className="flex flex-col select-none group">
               <div className="h-[34px] sm:h-[41px] overflow-hidden">
-                <img src="/src/assets/images/sofia_logo.webp" alt={t.clinic.name} className="h-10 sm:h-12 w-auto object-contain" />
+                <img src="/images/sofia_logo.webp" alt={t.clinic.name} className="h-10 sm:h-12 w-auto object-contain" />
               </div>
               <span
                 className={`block text-[9px] sm:text-[10px] font-bold tracking-[0.3em] uppercase -mt-0.5 transition-colors duration-300 ${

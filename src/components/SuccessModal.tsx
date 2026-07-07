@@ -3,9 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { X, CheckCircle2, Calendar, Phone, ArrowRight, ShieldCheck, Download } from 'lucide-react';
+import { X, CheckCircle2, ShieldCheck, ArrowLeft } from 'lucide-react';
 import { motion } from 'motion/react';
 import { ConsultationRequest } from '../types';
+import { CLINIC_WHATSAPP } from '../data';
+import { useTranslation } from '../contexts/LanguageContext';
+import WhatsAppIcon from './WhatsAppIcon';
 
 interface SuccessModalProps {
   request: ConsultationRequest | null;
@@ -13,6 +16,7 @@ interface SuccessModalProps {
 }
 
 export default function SuccessModal({ request, onClose }: SuccessModalProps) {
+  const { t } = useTranslation();
   if (!request) return null;
 
   return (
@@ -38,48 +42,48 @@ export default function SuccessModal({ request, onClose }: SuccessModalProps) {
           </div>
 
           <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight">
-            Consultation Requested!
+            {t.success.title}
           </h3>
           <p className="text-xs sm:text-sm text-white/95 mt-1 font-light">
-            Your personalized digital treatment plan is being prepared.
+            {t.success.subtitle}
           </p>
         </div>
 
         {/* Voucher Body */}
         <div className="p-6 sm:p-8 space-y-6">
-          
+
           {/* Medical Ticket / Voucher details */}
           <div className="border border-dashed border-gray-200 rounded-xl p-5 bg-surface-warm/35 space-y-4 relative">
             <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-white border-r border-gray-100" />
             <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-white border-l border-gray-100" />
 
             <div className="flex justify-between items-center text-[10px] text-neutral-gray tracking-widest uppercase font-semibold border-b border-gray-100 pb-3">
-              <span>Treatment Voucher</span>
-              <span className="text-primary-blue">ID: {request.id}</span>
+              <span>{t.success.bookingReference}</span>
+              <span className="text-primary-blue">{request.id}</span>
             </div>
 
             <div className="grid grid-cols-2 gap-4 text-xs">
               <div>
-                <span className="block text-neutral-gray font-light">Patient Name</span>
+                <span className="block text-neutral-gray font-light">{t.success.patientName}</span>
                 <span className="block font-bold text-neutral-charcoal text-sm mt-0.5">{request.name}</span>
               </div>
               <div>
-                <span className="block text-neutral-gray font-light">Contact Number</span>
+                <span className="block text-neutral-gray font-light">{t.success.contactNumber}</span>
                 <span className="block font-bold text-neutral-charcoal mt-0.5">{request.phone}</span>
               </div>
               <div>
-                <span className="block text-neutral-gray font-light">Request Date</span>
+                <span className="block text-neutral-gray font-light">{t.success.requestDate}</span>
                 <span className="block font-bold text-neutral-charcoal mt-0.5">{request.date}</span>
               </div>
               <div>
-                <span className="block text-neutral-gray font-light">Clinic Center</span>
-                <span className="block font-bold text-[#FCB900] mt-0.5">Istanbul Facility</span>
+                <span className="block text-neutral-gray font-light">{t.success.clinicCenter}</span>
+                <span className="block font-bold text-[#FCB900] mt-0.5">{t.success.istanbulFacility}</span>
               </div>
             </div>
 
             {request.message && (
               <div className="pt-2 text-xs border-t border-gray-100/60">
-                <span className="block text-neutral-gray font-light">Notes / Symptoms</span>
+                <span className="block text-neutral-gray font-light">{t.success.notes}</span>
                 <p className="text-neutral-charcoal italic mt-1 font-light">"{request.message}"</p>
               </div>
             )}
@@ -116,21 +120,21 @@ export default function SuccessModal({ request, onClose }: SuccessModalProps) {
           {/* Action CTAs */}
           <div className="pt-4 flex space-x-3">
             <button
-              onClick={() => {
-                alert("Voucher downloaded successfully! Please present this booking reference to your personal medical host upon arrival.");
-              }}
+              onClick={onClose}
               className="flex-1 h-11 border border-gray-200 hover:bg-gray-50 text-neutral-charcoal text-xs sm:text-sm font-bold rounded-lg transition-colors flex items-center justify-center space-x-1.5 cursor-pointer"
             >
-              <Download className="w-4 h-4 text-neutral-gray" />
-              <span>Save Voucher</span>
+              <ArrowLeft className="w-4 h-4 text-neutral-gray" />
+              <span>{t.success.backHome}</span>
             </button>
-            <button
-              onClick={onClose}
-              className="flex-1 h-11 bg-primary-blue hover:bg-primary-blue-hover text-white text-xs sm:text-sm font-bold rounded-lg transition-colors flex items-center justify-center space-x-1.5 cursor-pointer"
+            <a
+              href={CLINIC_WHATSAPP}
+              target="_blank"
+              rel="noreferrer"
+              className="flex-1 h-11 bg-[#25D366] hover:bg-[#20ba59] text-white text-xs sm:text-sm font-bold rounded-lg transition-colors flex items-center justify-center space-x-1.5 cursor-pointer"
             >
-              <span>Done</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
+              <WhatsAppIcon className="w-4 h-4" />
+              <span>{t.success.whatsappCta}</span>
+            </a>
           </div>
 
         </div>

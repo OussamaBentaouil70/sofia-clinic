@@ -20,29 +20,38 @@ import Footer from './components/Footer';
 import SuccessModal from './components/SuccessModal';
 import { ConsultationSubmit, ConsultationRequest } from './types';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost/sofia-clinic/api';
+
 export default function App() {
   const [activeConsultation, setActiveConsultation] = useState<ConsultationRequest | null>(null);
 
-  const handleRegister = (data: ConsultationSubmit) => {
-    // Generate a beautiful, realistic medical booking ID
-    const randomNum = Math.floor(1000 + Math.random() * 9000);
-    const bookingId = `SOUFIA-DE-${randomNum}`;
-    
-    // Get current date representation
+  const handleRegister = async (data: ConsultationSubmit) => {
     const formattedDate = new Date().toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
     });
 
-    const newRequest: ConsultationRequest = {
-      ...data,
-      id: bookingId,
-      date: formattedDate,
-      status: 'pending',
-    };
+    try {
+      const res = await fetch(`${API_URL}/send-mail.php`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const json = await res.json();
 
-    setActiveConsultation(newRequest);
+      if (!json.booking_id) {
+        throw new Error(json.message || 'Email server did not return a booking ID');
+      }
+      if (json.errors?.length) {
+        console.warn('Consultation request partially failed:', json.errors);
+      }
+
+      setActiveConsultation({ ...data, id: json.booking_id, date: formattedDate, status: 'pending' });
+    } catch (err) {
+      console.error('Consultation request failed:', err);
+      alert('Sorry, we could not send your request right now. Please try again or contact us on WhatsApp.');
+    }
   };
 
   const handleCloseSuccess = () => {

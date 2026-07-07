@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Calendar, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Calendar, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import { ConsultationSubmit } from '../types';
 import { useTranslation } from '../contexts/LanguageContext';
 
 interface ConsultationFormSectionProps {
-  onRegister: (data: ConsultationSubmit) => void;
+  onRegister: (data: ConsultationSubmit) => Promise<void>;
 }
 
 export default function ConsultationFormSection({ onRegister }: ConsultationFormSectionProps) {
@@ -12,6 +12,7 @@ export default function ConsultationFormSection({ onRegister }: ConsultationForm
   const [formData, setFormData] = useState<ConsultationSubmit>({ name: '', phone: '', email: '', message: '' });
   const [errors, setErrors] = useState<Partial<ConsultationSubmit>>({});
   const [phoneCode, setPhoneCode] = useState('+90');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const countryCodes = [
     { code: '+90', flag: '🇹🇷' }, { code: '+44', flag: '🇬🇧' }, { code: '+1', flag: '🇺🇸' },
@@ -29,12 +30,17 @@ export default function ConsultationFormSection({ onRegister }: ConsultationForm
     return Object.keys(e).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (validate()) {
-      onRegister({ ...formData, phone: `${phoneCode} ${formData.phone}` });
-      setFormData({ name: '', phone: '', email: '', message: '' });
-      setErrors({});
+    if (validate() && !isSubmitting) {
+      setIsSubmitting(true);
+      try {
+        await onRegister({ ...formData, phone: `${phoneCode} ${formData.phone}` });
+        setFormData({ name: '', phone: '', email: '', message: '' });
+        setErrors({});
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -101,10 +107,10 @@ export default function ConsultationFormSection({ onRegister }: ConsultationForm
                   className="w-full p-4 rounded-lg border border-gray-200 text-sm text-neutral-charcoal bg-white focus:border-primary-blue focus:ring-2 focus:ring-primary-blue/10 outline-none resize-none transition-all duration-200" />
               </div>
 
-              <button type="submit"
-                className="w-full h-[45px] inline-flex items-center justify-center space-x-2 bg-accent-magenta hover:bg-accent-magenta-hover text-white text-base font-bold rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform active:scale-[0.98] cursor-pointer">
-                <Calendar className="w-4 h-4" />
-                <span>{t.form.submit}</span>
+              <button type="submit" disabled={isSubmitting}
+                className="w-full h-[45px] inline-flex items-center justify-center space-x-2 bg-accent-magenta hover:bg-accent-magenta-hover disabled:opacity-70 disabled:cursor-not-allowed text-white text-base font-bold rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform active:scale-[0.98] cursor-pointer">
+                {isSubmitting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Calendar className="w-4 h-4" />}
+                <span>{isSubmitting ? t.form.sending : t.form.submit}</span>
               </button>
             </form>
           </div>
@@ -113,7 +119,7 @@ export default function ConsultationFormSection({ onRegister }: ConsultationForm
             <div className="relative">
               <div className="absolute inset-0 rounded-full border-4 border-dashed border-[#FCB900]/40 animate-[spin_60s_linear_infinite]" />
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-8 border-white shadow-2xl z-10 m-4">
-                <img src="/src/assets/images/dental_patient_1783270173837.jpg" alt="Happy Patient at Soufia Clinic"
+                <img src="/images/dental_patient_1783270173837.jpg" alt="Happy Patient at Soufia Clinic"
                   referrerPolicy="no-referrer" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary-blue/30 via-transparent to-transparent" />
               </div>

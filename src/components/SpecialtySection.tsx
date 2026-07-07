@@ -10,7 +10,7 @@ export default function SpecialtySection() {
     <section id="specialty" className="relative bg-white overflow-hidden border-b border-gray-100">
       <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[500px]">
         <div className="lg:col-span-6 relative min-h-[350px] lg:min-h-full overflow-hidden">
-          <img src="/src/assets/images/background_image.webp" alt="Soufia Clinic Dental Specialties"
+          <img src="/images/background_image.webp" alt="Soufia Clinic Dental Specialties"
             referrerPolicy="no-referrer" className="absolute inset-0 w-full h-full object-cover object-center filter brightness-95" />
           <div className="absolute top-6 left-6 bg-[#FCB900] text-neutral-charcoal text-xs font-bold px-4 py-1.5 rounded-full shadow-md">
             {s.badge}

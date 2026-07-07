@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { CLINIC_WHATSAPP } from '../data';
-import { Calendar, Check, AlertCircle } from 'lucide-react';
+import { Calendar, Check, AlertCircle, Loader2 } from 'lucide-react';
 import { ConsultationSubmit } from '../types';
 import WhatsAppIcon from './WhatsAppIcon';
 import { useTranslation } from '../contexts/LanguageContext';
 
 interface HeroSectionProps {
-  onRegister: (data: ConsultationSubmit) => void;
+  onRegister: (data: ConsultationSubmit) => Promise<void>;
 }
 
 export default function HeroSection({ onRegister }: HeroSectionProps) {
@@ -14,6 +14,7 @@ export default function HeroSection({ onRegister }: HeroSectionProps) {
   const [formData, setFormData] = useState<ConsultationSubmit>({ name: '', phone: '', email: '', message: '' });
   const [errors, setErrors] = useState<Partial<ConsultationSubmit>>({});
   const [phoneCode, setPhoneCode] = useState('+90');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const countryCodes = [
     { code: '+90', flag: '🇹🇷' }, { code: '+44', flag: '🇬🇧' }, { code: '+1', flag: '🇺🇸' },
@@ -31,12 +32,17 @@ export default function HeroSection({ onRegister }: HeroSectionProps) {
     return Object.keys(e).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (validate()) {
-      onRegister({ ...formData, phone: `${phoneCode} ${formData.phone}` });
-      setFormData({ name: '', phone: '', email: '', message: '' });
-      setErrors({});
+    if (validate() && !isSubmitting) {
+      setIsSubmitting(true);
+      try {
+        await onRegister({ ...formData, phone: `${phoneCode} ${formData.phone}` });
+        setFormData({ name: '', phone: '', email: '', message: '' });
+        setErrors({});
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -55,7 +61,7 @@ export default function HeroSection({ onRegister }: HeroSectionProps) {
   return (
     <section id="hero" className="relative min-h-screen pt-24 pb-16 flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img src="/src/assets/images/background_image.webp" alt="Soufia Clinic"
+        <img src="/images/background_image.webp" alt="Soufia Clinic"
           referrerPolicy="no-referrer" className="w-full h-full object-cover object-center transform scale-105 filter brightness-75" />
         <div className="absolute inset-0 bg-gradient-to-r from-neutral-charcoal/60 via-neutral-charcoal/45 to-black/55" />
       </div>
@@ -143,10 +149,10 @@ export default function HeroSection({ onRegister }: HeroSectionProps) {
                     className="w-full p-3 rounded-lg border border-gray-200 text-sm text-neutral-charcoal bg-white focus:border-primary-blue focus:ring-2 focus:ring-primary-blue/10 outline-none resize-none transition-all duration-200" />
                 </div>
 
-                <button type="submit"
-                  className="w-full h-[45px] mt-2 inline-flex items-center justify-center space-x-2 bg-accent-magenta hover:bg-accent-magenta-hover text-white text-base font-bold rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform active:scale-[0.98] cursor-pointer">
-                  <Calendar className="w-4 h-4" />
-                  <span>{t.form.submit}</span>
+                <button type="submit" disabled={isSubmitting}
+                  className="w-full h-[45px] mt-2 inline-flex items-center justify-center space-x-2 bg-accent-magenta hover:bg-accent-magenta-hover disabled:opacity-70 disabled:cursor-not-allowed text-white text-base font-bold rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform active:scale-[0.98] cursor-pointer">
+                  {isSubmitting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Calendar className="w-4 h-4" />}
+                  <span>{isSubmitting ? t.form.sending : t.form.submit}</span>
                 </button>
               </form>
 

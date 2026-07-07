@@ -32,7 +32,7 @@ export default function AboutSection() {
           <div className="lg:col-span-6 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white z-20">
-                <img src="/src/assets/images/dental_about_care_1783270190845.jpg" alt="Cosmetic Dental Care in Soufia Clinic"
+                <img src="/images/dental_about_care_1783270190845.jpg" alt="Cosmetic Dental Care in Soufia Clinic"
                   referrerPolicy="no-referrer" className="w-full h-auto object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white flex items-center space-x-2">

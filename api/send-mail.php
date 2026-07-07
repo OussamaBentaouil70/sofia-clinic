@@ -33,14 +33,42 @@ require_once $autoload;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+// ─── Load .env (simple key=value parser, no external dependency) ─────────────
+function loadEnv(string $path): void
+{
+    if (!file_exists($path)) {
+        return;
+    }
+    foreach (file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
+        $line = trim($line);
+        if ($line === '' || str_starts_with($line, '#') || !str_contains($line, '=')) {
+            continue;
+        }
+        [$key, $value] = explode('=', $line, 2);
+        $key   = trim($key);
+        $value = trim(trim($value), '"\'');
+        if (getenv($key) === false) {
+            putenv("{$key}={$value}");
+        }
+    }
+}
+$envPath = file_exists(__DIR__ . '/../.env') ? __DIR__ . '/../.env' : __DIR__ . '/.env';
+loadEnv($envPath);
+
 // ─── SMTP Configuration ────────────────────────────────────────────────────────
 $smtpHost     = getenv('SMTP_HOST')      ?: 'smtp.gmail.com';
 $smtpPort     = (int)(getenv('SMTP_PORT') ?: 587);
-$smtpUser     = getenv('SMTP_USER')      ?: 'bentaouiloussama@gmail.com';
-$smtpPass     = getenv('SMTP_PASS')      ?: 'ruto jzxm hcly coqx';
-$smtpFrom     = getenv('SMTP_FROM')      ?: 'bentaouiloussama@gmail.com';
+$smtpUser     = getenv('SMTP_USER')      ?: '';
+$smtpPass     = getenv('SMTP_PASS')      ?: '';
+$smtpFrom     = getenv('SMTP_FROM')      ?: $smtpUser;
 $smtpFromName = getenv('SMTP_FROM_NAME') ?: 'Soufia Clinic';
-$adminEmail   = getenv('ADMIN_EMAIL')    ?: 'bentaouiloussama@gmail.com';
+$adminEmails  = array_filter(array_map('trim', explode(',', getenv('ADMIN_EMAIL') ?: $smtpUser)));
+
+if (!$smtpUser || !$smtpPass) {
+    http_response_code(500);
+    echo json_encode(['success' => false, 'message' => 'SMTP not configured: missing .env with SMTP_USER/SMTP_PASS']);
+    exit;
+}
 
 // ─── Parse & sanitize input ────────────────────────────────────────────────────
 $raw = json_decode(file_get_contents('php://input'), true);
@@ -250,10 +278,12 @@ try {
     $errs[] = 'Patient email: ' . $e->getMessage();
 }
 
-// 2. Admin notification
+// 2. Admin notification (sent to every configured admin mailbox)
 try {
     $mail = makeMailer($smtpHost, $smtpPort, $smtpUser, $smtpPass, $smtpFrom, $smtpFromName);
-    $mail->addAddress($adminEmail, 'Soufia Clinic Admin');
+    foreach ($adminEmails as $adminEmail) {
+        $mail->addAddress($adminEmail, 'Soufia Clinic Admin');
+    }
     $mail->Subject = "🔔 New Booking {$bookingId} – {$name}";
     $mail->Body    = adminEmailTemplate($name, $email, $phone, $message, $bookingId, $date);
     $mail->AltBody = "New booking from {$name} ({$email}, {$phone}). ID: {$bookingId}";
