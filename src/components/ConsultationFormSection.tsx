@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import { ConsultationSubmit } from '../types';
+import PhoneField from './PhoneField';
 import { useTranslation } from '../contexts/LanguageContext';
 
 interface ConsultationFormSectionProps {
@@ -11,19 +12,13 @@ export default function ConsultationFormSection({ onRegister }: ConsultationForm
   const { t } = useTranslation();
   const [formData, setFormData] = useState<ConsultationSubmit>({ name: '', phone: '', email: '', message: '' });
   const [errors, setErrors] = useState<Partial<ConsultationSubmit>>({});
-  const [phoneCode, setPhoneCode] = useState('+90');
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const countryCodes = [
-    { code: '+90', flag: '🇹🇷' }, { code: '+44', flag: '🇬🇧' }, { code: '+1', flag: '🇺🇸' },
-    { code: '+49', flag: '🇩🇪' }, { code: '+33', flag: '🇫🇷' }, { code: '+966', flag: '🇸🇦' }, { code: '+971', flag: '🇦🇪' },
-  ];
 
   const validate = () => {
     const e: Partial<ConsultationSubmit> = {};
     if (!formData.name.trim()) e.name = t.form.errors.nameRequired;
     if (!formData.phone.trim()) e.phone = t.form.errors.phoneRequired;
-    else if (!/^\d{6,14}$/.test(formData.phone.replace(/[\s\-()]/g, ''))) e.phone = t.form.errors.phoneInvalid;
+    else if (!/^\+\d{7,15}$/.test(formData.phone.replace(/[\s\-()]/g, ''))) e.phone = t.form.errors.phoneInvalid;
     if (!formData.email.trim()) e.email = t.form.errors.emailRequired;
     else if (!/\S+@\S+\.\S+/.test(formData.email)) e.email = t.form.errors.emailInvalid;
     setErrors(e);
@@ -35,7 +30,7 @@ export default function ConsultationFormSection({ onRegister }: ConsultationForm
     if (validate() && !isSubmitting) {
       setIsSubmitting(true);
       try {
-        await onRegister({ ...formData, phone: `${phoneCode} ${formData.phone}` });
+        await onRegister(formData);
         setFormData({ name: '', phone: '', email: '', message: '' });
         setErrors({});
       } finally {
@@ -48,6 +43,11 @@ export default function ConsultationFormSection({ onRegister }: ConsultationForm
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
     if (errors[name as keyof ConsultationSubmit]) setErrors(prev => ({ ...prev, [name]: '' }));
+  };
+
+  const handlePhoneChange = (phone: string) => {
+    setFormData(prev => ({ ...prev, phone }));
+    if (errors.phone) setErrors(prev => ({ ...prev, phone: '' }));
   };
 
   const inputCls = (err?: string) =>
@@ -80,17 +80,8 @@ export default function ConsultationFormSection({ onRegister }: ConsultationForm
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-sm font-bold text-neutral-charcoal mb-1.5">{t.form.phone}</label>
-                  <div className="flex space-x-2">
-                    <div className="relative">
-                      <select value={phoneCode} onChange={e => setPhoneCode(e.target.value)}
-                        className="h-11 px-2 pr-6 rounded-lg border border-gray-200 text-xs font-medium text-neutral-charcoal bg-gray-50 focus:border-primary-blue outline-none appearance-none cursor-pointer">
-                        {countryCodes.map(c => <option key={c.code} value={c.code}>{c.flag} {c.code}</option>)}
-                      </select>
-                      <span className="absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-[8px]">▼</span>
-                    </div>
-                    <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange}
-                      placeholder={t.form.phonePlaceholder} className={inputCls(errors.phone).replace('w-full', 'flex-1')} />
-                  </div>
+                  <PhoneField value={formData.phone} onChange={handlePhoneChange}
+                    placeholder={t.form.phonePlaceholder} hasError={!!errors.phone} />
                   {errors.phone && <p className="mt-1.5 flex items-center text-xs text-[#D63637] font-medium"><AlertCircle className="w-3.5 h-3.5 mr-1" />{errors.phone}</p>}
                 </div>
                 <div>
