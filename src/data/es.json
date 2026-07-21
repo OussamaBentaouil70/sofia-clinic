@@ -1,0 +1,489 @@
+{
+  "clinic": {
+    "name": "Soufia Clinic Dental Care",
+    "phone": "+90 501 133 02 87",
+    "tagline": "Odontología y Estética Dental",
+    "address": "Estambul, Turquía",
+    "email": "contact@soufia-clinic.com"
+  },
+  "nav": {
+    "about": "Nosotros",
+    "treatments": "Tratamientos",
+    "services": "Servicios",
+    "beforeAfter": "Antes y Después",
+    "specialty": "Especialidad",
+    "team": "Equipo",
+    "testimonials": "Testimonios",
+    "whatsapp": "Whatsapp",
+    "chatWhatsapp": "Chatear por WhatsApp"
+  },
+  "hero": {
+    "title": "Odontología Premium y Estética Dental en Soufia Clinic",
+    "description": "Recupere la belleza y la salud de su sonrisa con los tratamientos más avanzados en implantología, odontología estética y rehabilitación dental. En Soufia Clinic, en Estambul, nuestros especialistas diseñan soluciones personalizadas para lograr una sonrisa natural, funcional y duradera, con tecnología de última generación y atención médica de excelencia.",
+    "whatsappLabel": "Chatear por WhatsApp"
+  },
+  "overview": {
+    "title": "Restauración Dental y Diseño de Sonrisa",
+    "text": "Consiga la sonrisa que siempre ha deseado en Soufia Clinic, Estambul. Nuestro mayor compromiso es ayudar a cada paciente a recuperar una sonrisa sana, radiante y la confianza para volver a sonreír sin complejos. Combinamos tecnología de última generación, materiales de máxima calidad y estrictos protocolos de higiene para ofrecer tratamientos dentales seguros, personalizados y con resultados duraderos."
+  },
+  "coreFeatures": [
+    {
+      "id": 1,
+      "title": "Odontología en un Solo Día",
+      "description": "Ahorre tiempo con nuestros tratamientos dentales de última generación. Procedimientos como la endodoncia con corona, la extracción con implante dental o el injerto óseo con elevación de seno maxilar, que normalmente requieren varias visitas, pueden realizarse en una sola sesión para los pacientes que cumplen los criterios clínicos. La solución perfecta para quienes viajan a Estambul en busca de un tratamiento rápido y eficaz.",
+      "image": "/images/service 1.webp"
+    },
+    {
+      "id": 2,
+      "title": "Consulta con un Especialista Dental",
+      "description": "Cada paciente merece un plan de tratamiento personalizado. Nuestros especialistas realizan una evaluación completa de su salud bucodental, le explican cada diagnóstico con total transparencia y diseñan la mejor solución para recuperar la función, la estética y la confianza en su sonrisa.",
+      "image": "/images/sevice 2.webp"
+    },
+    {
+      "id": 3,
+      "title": "Solicite su Cita Online",
+      "description": "Reserve su consulta de forma rápida y sencilla. Complete el formulario con la fecha y la hora que más le convengan, y uno de nuestros asesores se pondrá en contacto con usted para confirmar su cita y resolver cualquier duda sobre su tratamiento.",
+      "image": "/images/service 3.webp"
+    }
+  ],
+  "about": {
+    "sectionLabel": "Sobre Nosotros",
+    "title": "Soufia Clinic: Excelencia en Odontología en Estambul",
+    "paragraphs": [
+      "En Soufia Clinic combinamos experiencia, innovación y atención personalizada para ofrecer tratamientos dentales de la más alta calidad. Nuestra clínica en Estambul recibe pacientes de todo el mundo que buscan soluciones seguras, modernas y duraderas, realizadas por un equipo de odontólogos, implantólogos y especialistas altamente cualificados.",
+      "Desde implantes dentales y estética dental hasta rehabilitaciones orales completas, diseñamos planes de tratamiento totalmente personalizados para conseguir resultados naturales, funcionales y duraderos. Nuestro compromiso es brindarle una experiencia médica de primer nivel, con tecnología avanzada y los más altos estándares internacionales de calidad y seguridad."
+    ],
+    "watchVideo": "Ver Video",
+    "watchVideoSub": "Haga un recorrido virtual de 1 minuto por nuestra clínica de lujo",
+    "videoTitle": "Recorrido Virtual de Soufia Clinic",
+    "videoSub": "Haga un recorrido digital por nuestras instalaciones de última generación en Estambul, Turquía.",
+    "accredited": "Cirujanos Acreditados",
+    "successRatio": "Tasa de Éxito",
+    "painless": "Sin Dolor",
+    "sedation": "Sedación Suave",
+    "description": "Fundada por destacados cirujanos dentistas, Soufia Clinic transforma sonrisas en Estambul desde hace más de 15 años.",
+    "watchTour": "Ver Tour de la Clínica",
+    "stats": [
+      { "value": "15+", "label": "Años de Experiencia" },
+      { "value": "99.8%", "label": "Tasa de Éxito" },
+      { "value": "12k+", "label": "Pacientes Satisfechos" },
+      { "value": "5★", "label": "Valoración de Pacientes" }
+    ]
+  },
+  "treatments": {
+    "sectionLabel": "Odontología",
+    "title": "Descubra Nuestros Tratamientos Dentales de Excelencia",
+    "subtitle": "Ofrecemos soluciones odontológicas completas para restaurar la salud, la funcionalidad y la estética de su sonrisa. Cada tratamiento incluye una garantía de por vida y un programa de seguimiento personalizado (sujeto a las condiciones de garantía de la clínica).",
+    "viewDetails": "Ver Detalles",
+    "close": "Cerrar",
+    "highlightsLabel": "Datos Clave",
+    "ctaLabel": "Preguntar sobre este Tratamiento",
+    "items": [
+      {
+        "id": 1,
+        "slug": "dental-crowns",
+        "title": "Coronas Dentales",
+        "tagline": "Restauración Dental Completa",
+        "cardDescription": "Una restauración a medida que devuelve a su diente dañado la forma, la resistencia y la estética natural.",
+        "image": "/images/treatment-dental-crowns.jpg",
+        "intro": "Una corona dental es una restauración personalizada que recubre completamente un diente debilitado o dañado para devolverle su forma, resistencia, funcionalidad y estética. En Soufia Clinic utilizamos exclusivamente materiales biocompatibles de última generación, como E-Max® y Zirconio, para ofrecer resultados naturales, duraderos y perfectamente integrados con su sonrisa.",
+        "highlights": ["Vida útil media de 15 a 25 años", "Tratamiento en 2 citas, con 5 a 7 días de intervalo", "Garantía de por vida (sujeto a condiciones)", "Materiales premium con estándares internacionales"],
+        "sections": [
+          {
+            "heading": "¿Cuándo se Recomienda una Corona Dental?",
+            "items": [
+              "Después de una endodoncia, para proteger un diente debilitado",
+              "Cuando un empaste cubre más del 50 % del diente",
+              "En caso de fracturas, grietas o desgaste severo",
+              "Para pacientes con bruxismo o fuerte presión de mordida",
+              "Como restauración definitiva sobre un implante dental"
+            ]
+          },
+          {
+            "heading": "¿Qué Material Elegir?",
+            "items": [
+              "Corona E-Max®: máxima estética, ideal para dientes anteriores gracias a su translucidez que imita el esmalte natural; resistencia aproximada de 400 MPa, duración estimada de 15 a 20 años, recomendada para incisivos y caninos",
+              "Corona de Zirconio: máxima resistencia y durabilidad, la opción ideal para soportar grandes fuerzas de masticación; resistencia superior a 1200 MPa, duración estimada de 20 a 25 años, ideal para molares y pacientes con bruxismo"
+            ]
+          },
+          {
+            "heading": "¿Cómo es el Tratamiento?",
+            "items": [
+              "Primera cita: evaluación clínica completa, anestesia local, preparación del diente, escaneo digital 3D de alta precisión y colocación de una corona provisional",
+              "Segunda cita (5 a 7 días después): colocación de la corona definitiva, ajuste de la mordida y del color, correcciones finales y cementación permanente"
+            ]
+          },
+          {
+            "heading": "Cómo Cuidar su Corona Dental",
+            "items": [
+              "Cepille sus dientes al menos dos veces al día",
+              "Utilice hilo dental o cepillos interdentales diariamente",
+              "Use una férula nocturna si sufre de bruxismo",
+              "Evite morder alimentos extremadamente duros",
+              "Realice revisiones odontológicas periódicas cada 6 a 12 meses"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "slug": "dental-implants",
+        "title": "Implantes Dentales",
+        "tagline": "Reemplazo Permanente de Dientes",
+        "cardDescription": "Implantes de titanio que sustituyen permanentemente los dientes perdidos, devolviendo una mordida y una sonrisa naturales.",
+        "image": "/images/treatment-dental-implants.jpg",
+        "intro": "Los implantes dentales son la solución más avanzada, segura y duradera para sustituir uno o varios dientes perdidos. Un implante de titanio biocompatible se coloca en el hueso maxilar, donde se integra de forma natural para servir como una raíz artificial sobre la que se fija una corona de porcelana diseñada a medida. En Soufia Clinic trabajamos exclusivamente con sistemas de implantes suizos y suecos de primera calidad, reconocidos internacionalmente por su fiabilidad y por ofrecer una tasa de éxito superior al 98 %.",
+        "highlights": ["Más del 98 % de éxito clínico", "Recuperación de más del 90 % de la fuerza natural de mordida", "Dientes provisionales el mismo día (según evaluación clínica)", "Garantía de por vida (sujeto a condiciones)"],
+        "sections": [
+          {
+            "heading": "¿Por Qué Elegir Implantes Dentales?",
+            "items": [
+              "Conservan el hueso maxilar mediante estimulación natural y evitan la pérdida ósea tras la extracción",
+              "Recuperan más del 90 % de la capacidad de masticación",
+              "Permiten comer, hablar y sonreír con total seguridad, sin moverse ni requerir adhesivos",
+              "Ofrecen una apariencia completamente natural",
+              "Están diseñados para durar décadas con un mantenimiento adecuado"
+            ]
+          },
+          {
+            "heading": "Nuestras Soluciones de Implantología",
+            "items": [
+              "Implante dental unitario: la mejor opción para reemplazar un solo diente perdido, con más del 98 % de éxito y un tratamiento de 3 a 6 meses",
+              "All-on-4® y All-on-6®: recupere una dentadura completa utilizando únicamente 4 o 6 implantes para soportar una prótesis fija, con dientes provisionales el mismo día"
+            ]
+          },
+          {
+            "heading": "Etapas del Tratamiento",
+            "items": [
+              "Primera etapa — Colocación del implante: evaluación clínica y escáner 3D, cirugía con anestesia local, inserción del implante de titanio y colocación de dientes provisionales cuando está indicado",
+              "Segunda etapa — Osteointegración: el implante se fusiona con el hueso (3 a 4 meses en la mandíbula inferior, 4 a 6 meses en el maxilar superior)",
+              "Tercera etapa — Colocación de la corona definitiva: escaneo digital de alta precisión, fabricación personalizada de la corona de porcelana, ajuste y cementación definitiva"
+            ]
+          },
+          {
+            "heading": "¿Soy un Buen Candidato?",
+            "items": [
+              "Dispone de suficiente volumen óseo (si es necesario, es posible realizar un injerto óseo)",
+              "Tiene encías sanas y libres de infección",
+              "No fuma o está dispuesto a dejar de fumar durante la cicatrización",
+              "Goza de buena salud general (la diabetes controlada normalmente no es una contraindicación)"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "slug": "dental-veneers",
+        "title": "Carillas Dentales",
+        "tagline": "Transformación Completa de la Sonrisa",
+        "cardDescription": "Finas láminas de porcelana a medida que transforman la forma, el color y la alineación de su sonrisa.",
+        "image": "/images/treatment-dental-veneers.jpg",
+        "intro": "Las carillas dentales son finas láminas de cerámica de alta calidad, con un grosor de tan solo 0,3 a 0,5 mm, diseñadas a medida para cubrir la superficie visible de los dientes. Permiten transformar la sonrisa de forma mínimamente invasiva, conservando la mayor parte del esmalte natural. En Soufia Clinic utilizamos carillas de porcelana de última generación que ofrecen una estética excepcional, una gran resistencia y resultados totalmente naturales.",
+        "highlights": ["Solo 0,3 a 0,5 mm de grosor", "Tratamiento en 2 citas, separadas por 5 a 7 días", "El 95 % de las carillas siguen en perfecto estado después de 10 años", "Garantía de por vida (sujeto a condiciones)"],
+        "sections": [
+          {
+            "heading": "¿Qué Problemas Corrigen las Carillas?",
+            "items": [
+              "Dientes manchados u oscurecidos: manchas permanentes, fluorosis, oscurecimiento tras una endodoncia o decoloraciones que no responden al blanqueamiento",
+              "Dientes desgastados o astillados: reparación de fracturas, reconstrucción de bordes desgastados y recuperación de la forma natural",
+              "Espacios entre los dientes: cierre de pequeños espacios (diastemas), sin necesidad de ortodoncia en muchos casos",
+              "Leves desalineaciones: mejoran la apariencia de dientes ligeramente torcidos para lograr una sonrisa visualmente alineada"
+            ]
+          },
+          {
+            "heading": "¿Cómo es el Tratamiento?",
+            "items": [
+              "Primera cita: estudio estético personalizado, preparación mínima del esmalte, escaneo digital 3D, fabricación personalizada y colocación de carillas provisionales si es necesario",
+              "Segunda cita (5 a 7 días después): prueba de las carillas definitivas, ajuste de color, forma y mordida, adhesión definitiva con resinas de alta resistencia, pulido y acabado final"
+            ]
+          },
+          {
+            "heading": "¿Cuánto Duran las Carillas?",
+            "items": [
+              "El 95 % permanece en perfecto estado después de 10 años",
+              "El 85 % continúa funcionando correctamente tras 15 años",
+              "Con un buen mantenimiento, pueden durar muchos años más"
+            ]
+          },
+          {
+            "heading": "Cómo Cuidar sus Carillas",
+            "items": [
+              "Cepille sus dientes dos veces al día",
+              "Utilice hilo dental diariamente",
+              "Evite morder alimentos u objetos muy duros",
+              "Use una férula nocturna si sufre de bruxismo",
+              "Realice revisiones periódicas con su odontólogo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "slug": "hollywood-smile",
+        "title": "Hollywood Smile",
+        "tagline": "Transformación Completa de la Sonrisa",
+        "cardDescription": "Una transformación integral de la sonrisa que combina arte y ciencia para lograr dientes perfectamente alineados y blancos.",
+        "image": "/images/treatment-hollywood-smile.jpg",
+        "intro": "El Hollywood Smile es una transformación integral de la sonrisa que combina odontología estética, diseño digital y armonía facial para crear una sonrisa perfectamente alineada, luminosa y completamente natural. En Soufia Clinic, cada tratamiento se diseña de forma personalizada utilizando Digital Smile Design (DSD) y los principios del Golden Ratio, logrando resultados exclusivos que se adaptan a la anatomía y personalidad de cada paciente.",
+        "highlights": ["16 a 20 carillas premium de porcelana", "Transformación completa en 5 a 7 días", "Garantía de hasta 25 años según el material elegido", "Digital Smile Design incluido"],
+        "sections": [
+          {
+            "heading": "¿Qué Hace Especial a un Hollywood Smile?",
+            "items": [
+              "Simetría perfecta basada en el Golden Ratio",
+              "Sonrisa más blanca y luminosa (tonos A1 o B1)",
+              "Efecto de alineación inmediata sin ortodoncia en muchos casos",
+              "Translucidez que reproduce fielmente el esmalte natural",
+              "Una sonrisa elegante y fotogénica desde cualquier ángulo"
+            ]
+          },
+          {
+            "heading": "Su Transformación en 7 Días",
+            "items": [
+              "Día 1 — Diseño digital de la sonrisa: consulta personalizada, fotografías clínicas, escaneo digital 3D, análisis facial, simulación Digital Smile Design y selección del color ideal",
+              "Días 2 y 3 — Preparación dental: preparación mínimamente invasiva, máxima conservación del esmalte y colocación inmediata de carillas provisionales",
+              "Días 4 al 6 — Fabricación artesanal: sus carillas son elaboradas por maestros ceramistas con una forma, color y translucidez idénticos al esmalte natural",
+              "Día 7 — Colocación final: prueba estética, ajuste de mordida, cementación definitiva, acabados finales y presentación de su nueva sonrisa"
+            ]
+          },
+          {
+            "heading": "Materiales Premium",
+            "items": [
+              "E-Max® (recomendado): máxima translucidez, resistencia aproximada de 400 MPa, duración estimada de 15 a 20 años — la mejor opción para una estética totalmente natural",
+              "Zirconio Premium: resistencia superior a 1200 MPa, extremadamente duradero, vida útil estimada de 20 a 25 años — ideal para pacientes con una mordida fuerte o bruxismo"
+            ]
+          },
+          {
+            "heading": "Su Tratamiento Incluye",
+            "items": [
+              "16 a 20 carillas premium personalizadas",
+              "Digital Smile Design (DSD) y escaneo digital 3D",
+              "Carillas provisionales",
+              "Limpieza dental profesional",
+              "Selección personalizada del color",
+              "Kit completo de cuidados posteriores y seguimiento personalizado"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "slug": "teeth-whitening",
+        "title": "Blanqueamiento Dental",
+        "tagline": "Una Sonrisa Más Blanca y Radiante",
+        "cardDescription": "Un blanqueamiento supervisado por un dentista que aclara los dientes de 6 a 10 tonos en una sola sesión de 60 a 90 minutos.",
+        "image": "/images/treatment-teeth-whitening.jpg",
+        "intro": "Recupere el brillo natural de su sonrisa con nuestro blanqueamiento dental profesional en clínica. En Soufia Clinic utilizamos agentes blanqueadores de grado médico con peróxido de hidrógeno al 35–40 %, capaces de aclarar sus dientes entre 6 y 10 tonos en una sola sesión. El tratamiento es realizado bajo la supervisión de nuestros especialistas, garantizando resultados rápidos, uniformes y seguros, protegiendo tanto el esmalte como las encías.",
+        "highlights": ["Hasta 10 tonos más blancos", "Resultados en 60 a 90 minutos", "Supervisión profesional durante todo el tratamiento", "Resultados que pueden durar entre 1 y 3 años"],
+        "sections": [
+          {
+            "heading": "Blanqueamiento Profesional vs. Kits Caseros",
+            "items": [
+              "Blanqueamiento profesional en Soufia Clinic: concentración profesional del 35–40 %, resultados visibles en una sola sesión, hasta 6 a 10 tonos más blancos, protección total de las encías y tratamiento personalizado y supervisado",
+              "Kits caseros: concentración reducida (3–10 %), aplicación diaria durante varias semanas, solo 2 a 4 tonos de aclarado, resultados menos uniformes y mayor riesgo de sensibilidad e irritación"
+            ]
+          },
+          {
+            "heading": "¿Cómo es el Procedimiento?",
+            "items": [
+              "Paso 1 — Preparación: limpieza dental profesional, eliminación de placa y manchas superficiales, registro del color inicial y protección de las encías",
+              "Paso 2 — Aplicación del gel: se aplica un gel blanqueador de alta concentración que se activa mediante una luz LED azul, en ciclos de aproximadamente 15 a 20 minutos",
+              "Paso 3 — Potenciación del resultado: el gel se reaplica entre 3 y 4 veces para eliminar progresivamente las manchas profundas y conseguir un aclarado uniforme"
+            ]
+          },
+          {
+            "heading": "Resultados Según el Tipo de Mancha",
+            "items": [
+              "Manchas de café o té: aclarado de 8 a 10 tonos",
+              "Amarilleamiento por el paso del tiempo: aclarado de 6 a 8 tonos",
+              "Manchas por tabaco: aclarado de 5 a 7 tonos"
+            ]
+          },
+          {
+            "heading": "Cuidados Durante las Primeras 48 Horas",
+            "items": [
+              "Durante las primeras 48 horas, los poros del esmalte permanecen más abiertos y pueden absorber pigmentos con mayor facilidad: evite el café, té, vino tinto, frutos rojos, salsa de tomate, bebidas con colorantes y tabaco",
+              "Seguir estas recomendaciones ayuda a mantener una sonrisa blanca y brillante durante mucho más tiempo"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "services": {
+    "sectionLabel": "Servicios para Pacientes",
+    "title": "Una Experiencia Todo Incluido Pensada para Usted",
+    "subtitle": "En Soufia Clinic nos ocupamos de cada detalle de su viaje para que solo tenga que preocuparse por una cosa: recuperar una sonrisa sana, natural y duradera.",
+    "items": [
+      {
+        "id": 1,
+        "title": "Alojamiento Premium Incluido",
+        "description": "En Soufia Clinic, su bienestar comienza desde su llegada. Por ello, ofrecemos a nuestros pacientes internacionales alojamiento gratuito en exclusivos hoteles de 5 estrellas cuidadosamente seleccionados en Estambul.",
+        "iconName": "Hotel"
+      },
+      {
+        "id": 2,
+        "title": "Asistencia Personal Multilingüe",
+        "description": "Desde su llegada, contará con un coordinador personal que estará a su lado durante todo el proceso, junto con un intérprete profesional en su idioma durante las consultas médicas.",
+        "iconName": "Languages"
+      },
+      {
+        "id": 3,
+        "title": "Seguimiento Personalizado Después del Tratamiento",
+        "description": "Durante 12 meses, nuestros especialistas realizan un seguimiento personalizado tras sus implantes o tratamientos dentales mediante revisiones a distancia para garantizar resultados estables y duraderos.",
+        "iconName": "ShieldAlert"
+      },
+      {
+        "id": 4,
+        "title": "Consulta Inicial Gratuita",
+        "description": "Antes de viajar a Estambul, nuestros especialistas analizan sus radiografías, fotografías o escáner dental para elaborar un diagnóstico preciso y un plan de tratamiento totalmente personalizado, sin coste alguno.",
+        "iconName": "CalendarDays"
+      },
+      {
+        "id": 5,
+        "title": "Su Bienestar, Nuestra Prioridad",
+        "description": "En Soufia Clinic recibimos a cada paciente con el mismo cuidado y cercanía que a un miembro de nuestra familia. Nuestra misión es ofrecerle una experiencia dental serena, sin dolor y completamente personalizada.",
+        "iconName": "Heart"
+      },
+      {
+        "id": 6,
+        "title": "Traslados VIP Gratuitos",
+        "description": "Soufia Clinic ofrece traslados privados de lujo a nuestros pacientes durante toda su estancia, incluyendo los trayectos desde el aeropuerto, el hotel y la clínica.",
+        "iconName": "Car"
+      }
+    ]
+  },
+  "beforeAfter": {
+    "sectionLabel": "Transformaciones Reales",
+    "title": "Resultados Antes y Después",
+    "description": "Transformaciones de sonrisa reales logradas por nuestro equipo dental en pacientes reales.",
+    "ctaWhatsapp": "Consulte a Nuestros Expertos por WhatsApp",
+    "images": [
+      "/images/before_after_1.png",
+      "/images/before_after_2.png",
+      "/images/before_after_3.png"
+    ]
+  },
+  "specialty": {
+    "sectionLabel": "Experiencia y Cuidado",
+    "badge": "★ Mejor Clínica Dental de Turquía",
+    "title": "Nuestras Especialidades Dentales",
+    "description": "La clínica ofrece soluciones médicas modernas, incluyendo odontología cosmética avanzada, alineación ortodóncica, injertos óseos e implantes de zafiro de carga inmediata.",
+    "longDescription": "El centro ofrece servicios integrales y de vanguardia, prestados por equipos clínicos experimentados. Nos centramos en su estética facial personal y utilizamos materiales y tecnología probados para lograr transformaciones de sonrisa. Nuestros paquetes de atención premium incluyen alojamiento de lujo, traslados VIP privados y un año completo de seguimiento personalizado.",
+    "whatsappButton": "Chatear por WhatsApp",
+    "badges": ["Certificado ISO", "100% Garantizado", "Sedación Sin Dolor"]
+  },
+  "team": {
+    "sectionLabel": "Conozca a Nuestro Equipo",
+    "title": "Los Expertos Dentales Detrás de Su Sonrisa",
+    "subtitle": "Un equipo dedicado de dentistas colegiados comprometidos con su comodidad, seguridad y resultados.",
+    "roleLabel": "Dentista Colegiado",
+    "items": [
+      { "id": 1, "name": "Dr. Leyla Hasaneyn", "image": "/images/Dr_Leyla_Hasaneyn.png" },
+      { "id": 2, "name": "Dr. Uveys Kovara", "image": "/images/Dr. Uveys Kovara.png" },
+      { "id": 3, "name": "Dr. Lin Makki", "image": "/images/Dr. Lin MAKKİ.png" },
+      { "id": 4, "name": "Dr. Ümit Halim Demirel", "image": "/images/Dr. Ümit Halim DEMİREL.png" }
+    ]
+  },
+  "testimonials": {
+    "sectionLabel": "Opiniones de Pacientes",
+    "title": "Lo Que Dicen Nuestros Pacientes",
+    "subtitle": "Historias reales de pacientes reales que transformaron su sonrisa en Soufia Clinic.",
+    "items": [
+      {
+        "id": 1,
+        "name": "Sofia Martins",
+        "location": "Lisboa, Portugal",
+        "rating": 5,
+        "text": "Un servicio cálido, centrado en el paciente y de una precisión absoluta. Me hice coronas de zirconio en toda la arcada y ahora me siento mucho más segura al sonreír. ¡Un seguimiento excelente!",
+        "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=120&h=120"
+      },
+      {
+        "id": 2,
+        "name": "Ahmed R.",
+        "location": "Marruecos, Casablanca",
+        "rating": 5,
+        "text": "Elegir Soufia Clinic fue la mejor decisión. Desde la consulta online gratuita hasta el traslado VIP desde el aeropuerto, todo fue excelente. Los implantes dentales de zafiro se ven extremadamente naturales y se sienten como dientes reales.",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120&h=120"
+      },
+      {
+        "id": 3,
+        "name": "Marco L.",
+        "location": "Estambul, Turquía",
+        "rating": 5,
+        "text": "Profesional e indoloro de principio a fin. El alojamiento gratuito, los traslados privados sin complicaciones y un equipo médico altamente cualificado hicieron que mi transformación de sonrisa fuera sin estrés. ¡Totalmente recomendable!",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=120&h=120"
+      }
+    ]
+  },
+  "stats": {
+    "items": [
+      { "value": "15+", "label": "Años de Experiencia" },
+      { "value": "99.8%", "label": "Tasa de Éxito" },
+      { "value": "12k+", "label": "Pacientes Satisfechos" },
+      { "value": "5★", "label": "Valoración de Pacientes" }
+    ]
+  },
+  "consultation": {
+    "sectionLabel": "Consulta Gratuita",
+    "title": "Obtenga su Plan de Tratamiento Gratuito",
+    "subtitle": "Complete este formulario y nuestros expertos dentales se pondrán en contacto con usted en un plazo de 24 horas con un plan de tratamiento personalizado.",
+    "badge": "Plan de Tratamiento Gratuito"
+  },
+  "form": {
+    "name": "Nombre Completo",
+    "namePlaceholder": "ej. Juan Pérez",
+    "phone": "Número de Teléfono",
+    "phonePlaceholder": "ej. 555000000",
+    "email": "Correo Electrónico",
+    "emailPlaceholder": "ej. juan@ejemplo.com",
+    "message": "Mensaje / Tratamiento Deseado",
+    "messagePlaceholder": "Describa sus objetivos dentales (ej. implantes, blanqueamiento, alineación)...",
+    "submit": "Reservar una Consulta",
+    "sending": "Enviando...",
+    "contactSubmit": "Contáctenos",
+    "secure": "100% Seguro y Confidencial",
+    "yourName": "Su Nombre",
+    "yourMessage": "Su Mensaje",
+    "errors": {
+      "nameRequired": "El nombre es obligatorio",
+      "phoneRequired": "El teléfono es obligatorio",
+      "phoneInvalid": "Número de teléfono no válido",
+      "emailRequired": "El correo electrónico es obligatorio",
+      "emailInvalid": "Dirección de correo electrónico no válida"
+    }
+  },
+  "footer": {
+    "description": "Soufia Clinic ofrece implantes dentales de vanguardia, transformaciones de sonrisa y tratamientos de ortodoncia con cirujanos estéticos altamente acreditados en Estambul, Turquía.",
+    "usefulLinks": "Enlaces Útiles",
+    "contactUs": "Contáctenos",
+    "copyright": "© 2026. Soufia Clinic. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "chatTooltip": "¡Chatee con nosotros!",
+    "links": [
+      { "label": "Sobre Nosotros", "href": "#about" },
+      { "label": "Tratamientos", "href": "#treatments" },
+      { "label": "Servicios", "href": "#services" },
+      { "label": "Antes y Después", "href": "#before-after" },
+      { "label": "Nuestra Especialidad", "href": "#specialty" },
+      { "label": "Nuestro Equipo", "href": "#team" },
+      { "label": "Testimonios", "href": "#testimonials" },
+      { "label": "Consulta Gratuita", "href": "#consultation-form" }
+    ]
+  },
+  "success": {
+    "title": "¡Reserva Confirmada!",
+    "subtitle": "Su solicitud de consulta ha sido recibida.",
+    "close": "Cerrar",
+    "bookingReference": "Referencia de Reserva",
+    "patientName": "Nombre del Paciente",
+    "contactNumber": "Número de Contacto",
+    "requestDate": "Fecha de la Solicitud",
+    "clinicCenter": "Centro Clínico",
+    "istanbulFacility": "Centro de Estambul",
+    "notes": "Notas / Síntomas",
+    "backHome": "Volver al Inicio",
+    "whatsappCta": "Chatear por WhatsApp"
+  }
+}

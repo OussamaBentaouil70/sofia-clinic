@@ -1,8 +1,9 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import en from '../data/en.json';
 import fr from '../data/fr.json';
+import es from '../data/es.json';
 
-type Lang = 'en' | 'fr';
+type Lang = 'en' | 'fr' | 'es';
 type Content = typeof en;
 
 interface LanguageContextValue {
@@ -17,12 +18,13 @@ const LanguageContext = createContext<LanguageContextValue>({
   setLang: () => {},
 });
 
-const contentMap: Record<Lang, Content> = { en, fr };
+const contentMap: Record<Lang, Content> = { en, fr, es };
+const langPrefixes: Lang[] = ['fr', 'es'];
 
 function detectLang(): Lang {
   const path = window.location.pathname;
-  if (path.startsWith('/fr')) return 'fr';
-  return 'en';
+  const match = langPrefixes.find((code) => path.startsWith(`/${code}`));
+  return match ?? 'en';
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
@@ -30,8 +32,9 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const setLang = (newLang: Lang) => {
     setLangState(newLang);
-    const path = window.location.pathname.replace(/^\/(en|fr)/, '');
-    const newPath = newLang === 'en' ? path || '/' : `/fr${path}`;
+    const prefixPattern = new RegExp(`^/(${langPrefixes.join('|')})`);
+    const path = window.location.pathname.replace(prefixPattern, '');
+    const newPath = newLang === 'en' ? path || '/' : `/${newLang}${path}`;
     window.history.pushState({}, '', newPath);
   };
 

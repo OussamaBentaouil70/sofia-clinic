@@ -41,9 +41,11 @@ export default function Header() {
   const languages = [
     { code: 'en' as const, label: 'English', flag: '🇬🇧' },
     { code: 'fr' as const, label: 'Français', flag: '🇫🇷' },
+    { code: 'es' as const, label: 'Español', flag: '🇪🇸' },
   ];
 
   const currentLang = languages.find(l => l.code === lang)!;
+  const nextLang = languages[(languages.findIndex(l => l.code === lang) + 1) % languages.length];
 
   return (
     <>
@@ -56,7 +58,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
 
             {/* Logo */}
-            <a href="#" className="flex flex-col select-none group">
+            <a href="#" className="flex flex-col select-none group shrink-0">
               <div className="h-[34px] sm:h-[41px] overflow-hidden">
                 <img src="/images/sofia_logo.webp" alt={t.clinic.name} className="h-10 sm:h-12 w-auto object-contain" />
               </div>
@@ -70,12 +72,12 @@ export default function Header() {
             </a>
 
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center space-x-8">
+            <nav className="hidden lg:flex items-center space-x-3 xl:space-x-6 min-w-0">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className={`text-sm font-medium tracking-wide transition-colors duration-200 border-b-2 border-transparent hover:border-primary-blue hover:text-primary-blue py-1 ${
+                  className={`whitespace-nowrap text-xs xl:text-sm font-medium tracking-wide transition-colors duration-200 border-b-2 border-transparent hover:border-primary-blue hover:text-primary-blue py-1 ${
                     scrolled ? 'text-neutral-charcoal' : 'text-white hover:text-primary-blue-accent'
                   }`}
                 >
@@ -85,7 +87,7 @@ export default function Header() {
             </nav>
 
             {/* Actions */}
-            <div className="hidden sm:flex items-center space-x-3">
+            <div className="hidden sm:flex items-center space-x-3 shrink-0">
               {/* Language Switcher */}
               <div className="relative" ref={langRef}>
                 <button
@@ -145,15 +147,15 @@ export default function Header() {
 
             {/* Mobile icons */}
             <div className="flex items-center sm:hidden space-x-2">
-              {/* Mobile language toggle (simple flag cycle) */}
+              {/* Mobile language toggle (cycles through all languages) */}
               <button
-                onClick={() => setLang(lang === 'en' ? 'fr' : 'en')}
+                onClick={() => setLang(nextLang.code)}
                 className={`p-2 rounded-full text-sm font-bold border transition-all ${
                   scrolled ? 'border-gray-200 bg-white' : 'border-white/30 bg-white/10 text-white'
                 }`}
                 aria-label="Toggle language"
               >
-                {lang === 'en' ? '🇫🇷' : '🇬🇧'}
+                {currentLang.flag}
               </button>
               <a href={CLINIC_WHATSAPP} target="_blank" rel="noreferrer" className="bg-[#25D366] text-white p-2 rounded-full shadow">
                 <WhatsAppIcon className="w-4 h-4" />

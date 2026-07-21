@@ -18,41 +18,40 @@
     "chatWhatsapp": "Chat sur WhatsApp"
   },
   "hero": {
-    "title": "Soins Dentaires Premium & Esthétique à la Clinique Soufia",
-    "description": "Les traitements dentaires et cosmétiques les plus récents et les plus efficaces. Retrouvez votre beau sourire naturellement et en toute confiance avec les meilleurs experts dentaires d'Istanbul.",
+    "title": "Soins Dentaires Haut de Gamme & Esthétique Dentaire chez Soufia Clinic",
+    "description": "Redonnez vie à votre sourire grâce aux dernières innovations en implantologie, dentisterie esthétique et réhabilitation dentaire. Chez Soufia Clinic à Istanbul, nos spécialistes conçoivent des traitements personnalisés pour vous offrir un sourire naturel, harmonieux et durable, dans un environnement médical de classe internationale.",
     "whatsappLabel": "Chat via Whatsapp"
   },
   "overview": {
-    "title": "Restauration Dentaire & Sourire",
-    "text": "Obtenez le sourire de vos rêves à Istanbul avec la Clinique Soufia. Rien ne nous fait plus plaisir que de voir quelqu'un quitter notre clinique avec un sourire sain, éclatant et une confiance entièrement renouvelée. Nous proposons des procédures de pointe selon les normes d'hygiène les plus élevées."
+    "title": "Restauration Dentaire & Transformation du Sourire",
+    "text": "Retrouvez le sourire dont vous avez toujours rêvé grâce à Soufia Clinic, à Istanbul. Notre plus grande satisfaction est de voir nos patients repartir avec un sourire éclatant, une santé bucco-dentaire retrouvée et une confiance en eux renouvelée. Grâce à des technologies de pointe, des matériaux premium et des protocoles d'hygiène conformes aux normes internationales, nous réalisons des traitements dentaires durables, confortables et entièrement personnalisés."
   },
   "coreFeatures": [
     {
       "id": 1,
-      "title": "Dentisterie en Une Journée",
-      "description": "Des procédures comme un traitement de canal & couronne, une extraction & implant, ou une greffe osseuse/sinus lift prennent normalement 3 à 5 visites. Nous pouvons le faire en une seule !",
+      "title": "Dentisterie en Une Seule Visite",
+      "description": "Gagnez du temps grâce à nos traitements dentaires accélérés. Des interventions telles que le traitement de canal avec couronne, l'extraction suivie d'un implant dentaire ou encore la greffe osseuse avec sinus lift, habituellement réalisées en plusieurs rendez-vous, peuvent être effectuées en une seule visite selon votre éligibilité. Une solution idéale pour les patients internationaux souhaitant optimiser leur séjour à Istanbul.",
       "image": "/images/service 1.webp"
     },
     {
       "id": 2,
-      "title": "Consultation Spécialisée",
-      "description": "Nous mettons un point d'honneur à expliquer à nos patients l'état de leur santé dentaire. Nous vous guidons dans l'élaboration d'un plan de traitement efficace.",
+      "title": "Consultation avec un Chirurgien-Dentiste Spécialiste",
+      "description": "Chaque sourire est unique. Lors de votre consultation, nos spécialistes réalisent un diagnostic complet, expliquent clairement l'état de votre santé bucco-dentaire et élaborent avec vous un plan de traitement personnalisé. Nous vous accompagnons à chaque étape afin de garantir des résultats durables, esthétiques et adaptés à vos attentes.",
       "image": "/images/sevice 2.webp"
     },
     {
       "id": 3,
-      "title": "Rendez-vous en Ligne",
-      "description": "Remplissez le formulaire, indiquez-nous l'heure qui vous convient pour un rendez-vous et nous vous appellerons pour confirmation.",
+      "title": "Prendre Rendez-vous en Ligne",
+      "description": "Planifiez votre consultation en quelques clics. Remplissez le formulaire en indiquant vos disponibilités, et l'un de nos conseillers vous contactera rapidement pour confirmer votre rendez-vous et répondre à toutes vos questions concernant votre traitement.",
       "image": "/images/service 3.webp"
     }
   ],
   "about": {
-    "sectionLabel": "À Propos",
-    "title": "Soins Dentaires de Classe Mondiale à la Clinique Soufia",
+    "sectionLabel": "À Propos de Nous",
+    "title": "Soufia Clinic : L'Excellence des Soins Dentaires à Istanbul",
     "paragraphs": [
-      "La Clinique Soufia offre une expérience de soins dentaires de haute qualité et personnalisée à Istanbul, Turquie. Nous travaillons avec des chirurgiens-dentistes et orthodontistes hautement accrédités pour garantir des résultats cosmétiques et reconstructifs exceptionnels.",
-      "Des patients de tous horizons viennent du monde entier pour recevoir nos traitements spécialisés. Notre engagement absolu est de fournir une expérience clinique de classe mondiale, offrant des sourires parfaitement naturels, durables et sains qui changent des vies.",
-      "Équipés des derniers systèmes de conception dentaire CAD/CAM, modules de blanchiment laser et technologies d'implants saphir, nous combinons autorité médicale et confort absolu du patient."
+      "Chez Soufia Clinic, nous mettons l'expertise médicale, l'innovation et l'accompagnement personnalisé au cœur de chaque traitement. Située à Istanbul, notre clinique accueille des patients du monde entier à la recherche de soins dentaires de haute qualité, réalisés par une équipe de chirurgiens-dentistes et de spécialistes hautement qualifiés.",
+      "De l'implantologie à la dentisterie esthétique, en passant par la réhabilitation complète du sourire, nous concevons des plans de traitement sur mesure afin d'obtenir des résultats naturels, durables et parfaitement adaptés à chaque patient. Notre engagement : vous offrir une expérience médicale d'excellence dans un environnement moderne, sécurisé et conforme aux standards internationaux."
     ],
     "watchVideo": "Voir la Vidéo",
     "watchVideoSub": "Faites une visite virtuelle de 1 minute de notre clinique de luxe",
@@ -73,8 +72,8 @@
   },
   "treatments": {
     "sectionLabel": "Soins Dentaires",
-    "title": "Découvrez Nos Traitements Dentaires",
-    "subtitle": "Cinq traitements avancés, certifiés JCI — chaque procédure est couverte par une garantie à vie et un programme de suivi dédié.",
+    "title": "Découvrez Nos Traitements Dentaires d'Excellence",
+    "subtitle": "Des solutions dentaires complètes conçues pour restaurer la santé, la fonction et l'esthétique de votre sourire. Chaque traitement est accompagné d'une garantie à vie ainsi que d'un programme de suivi personnalisé (selon les conditions de garantie de la clinique).",
     "viewDetails": "Voir les Détails",
     "close": "Fermer",
     "highlightsLabel": "Points Clés",
@@ -84,43 +83,44 @@
         "id": 1,
         "slug": "dental-crowns",
         "title": "Couronnes Dentaires",
-        "tagline": "Restauration Dentaire Complète",
+        "tagline": "Restauration Complète de la Dent",
         "cardDescription": "Une coiffe en forme de dent qui restaure entièrement la forme, la solidité et l'apparence d'une dent abîmée.",
         "image": "/images/treatment-dental-crowns.jpg",
-        "intro": "Une couronne dentaire est une coiffe en forme de dent qui recouvre entièrement une dent endommagée au-dessus de la gencive, en reconstruisant sa forme, sa taille, sa solidité et son apparence. Fabriquées en céramiques biocompatibles telles que l'E-Max et la Zircone, nos couronnes fonctionnent et ressemblent exactement à des dents naturelles.",
-        "highlights": ["Durée de vie moyenne de 15 à 25 ans", "2 rendez-vous, espacés de 5 à 7 jours", "Garantie à vie", "Matériaux certifiés JCI"],
+        "intro": "Une couronne dentaire est une restauration sur mesure qui recouvre entièrement une dent fragilisée ou endommagée afin de lui redonner sa forme, sa solidité, sa fonction et son esthétique. Chez Soufia Clinic, nous utilisons exclusivement des matériaux biocompatibles de dernière génération, tels que E-Max® et Zircone, offrant un résultat naturel, durable et parfaitement intégré à votre sourire.",
+        "highlights": ["Durée de vie moyenne de 15 à 25 ans", "Traitement en 2 rendez-vous, espacés de 5 à 7 jours", "Garantie à vie (selon conditions de la clinique)", "Matériaux premium conformes aux normes internationales"],
         "sections": [
           {
-            "heading": "Quand Avez-vous Besoin d'une Couronne ?",
+            "heading": "Quand une Couronne Dentaire est-elle Recommandée ?",
             "items": [
-              "Après un traitement de canal, lorsque la dent devient fragile",
-              "Obturations importantes couvrant plus de 50 % de la dent",
-              "Fissures ou fractures sévères",
-              "Dents usées par le grincement",
-              "Pour compléter une restauration sur implant"
+              "Après un traitement de canal (dévitalisation), pour protéger une dent fragilisée",
+              "Lorsque plus de 50 % de la dent est restaurée par une obturation importante",
+              "En cas de fracture, fissure ou usure importante de la dent",
+              "Pour les personnes souffrant de bruxisme (grincement des dents)",
+              "Pour finaliser la pose d'un implant dentaire"
             ]
           },
           {
-            "heading": "Choisir le Bon Matériau",
+            "heading": "Quel Matériau Choisir ?",
             "items": [
-              "E-Max (dents antérieures) : l'option la plus translucide, imite l'émail naturel, résistante aux taches, résistance de 400 MPa, garantie de 15 à 20 ans — idéale pour la zone visible du sourire",
-              "Zircone (dents postérieures) : extrêmement durable avec une résistance de 1200+ MPa, résistante aux éclats, réduction dentaire minimale, garantie de 20 à 25 ans — idéale pour les molaires et le bruxisme"
+              "E-Max® : l'esthétique avant tout — idéale pour les dents visibles, cette céramique reproduit la transparence et la luminosité de l'émail naturel ; résistance d'environ 400 MPa, durée de vie de 15 à 20 ans, recommandée pour les incisives et canines",
+              "Zircone : la solution la plus résistante — référence pour les dents soumises à une forte pression de mastication ; résistance de 1200+ MPa, très grande durabilité, durée de vie de 20 à 25 ans, idéale pour les molaires et les patients atteints de bruxisme"
             ]
           },
           {
-            "heading": "Processus de Traitement",
+            "heading": "Déroulement du Traitement",
             "items": [
-              "Premier rendez-vous : sous anesthésie locale, la dent abîmée est remodelée, une empreinte numérique est prise et une couronne temporaire est posée",
-              "Deuxième rendez-vous (5 à 7 jours plus tard) : la couronne définitive est posée, ajustée pour l'occlusion et la couleur, puis scellée de façon permanente"
+              "1ère consultation : examen clinique complet, anesthésie locale, préparation de la dent, empreinte numérique 3D de haute précision et pose d'une couronne provisoire",
+              "2ème consultation (5 à 7 jours plus tard) : essayage de la couronne définitive, vérification de la couleur et de l'occlusion, ajustements si nécessaire, puis scellement définitif"
             ]
           },
           {
-            "heading": "Entretenir Votre Couronne",
+            "heading": "Conseils pour Préserver Votre Couronne",
             "items": [
-              "Maintenir une hygiène bucco-dentaire quotidienne",
-              "Porter une gouttière nocturne en cas de bruxisme",
-              "Éviter de mordre des aliments très durs",
-              "Poursuivre des contrôles dentaires réguliers"
+              "Brossez-vous les dents au minimum deux fois par jour",
+              "Utilisez quotidiennement du fil dentaire ou des brossettes interdentaires",
+              "Portez une gouttière de nuit si vous souffrez de bruxisme",
+              "Évitez de croquer des aliments extrêmement durs",
+              "Effectuez un contrôle chez votre dentiste tous les 6 à 12 mois"
             ]
           }
         ]
@@ -129,44 +129,44 @@
         "id": 2,
         "slug": "dental-implants",
         "title": "Implants Dentaires",
-        "tagline": "Remplacement Dentaire Permanent",
+        "tagline": "Remplacement Permanent des Dents",
         "cardDescription": "Des piliers en titane qui remplacent définitivement les dents manquantes, restaurant une morsure et un sourire naturels.",
         "image": "/images/treatment-dental-implants.jpg",
-        "intro": "Les implants dentaires sont la référence pour remplacer les dents manquantes. Un pilier en titane est placé chirurgicalement dans l'os de la mâchoire, où il fusionne naturellement pour créer une base permanente et stable pour une couronne en porcelaine sur mesure. Nous utilisons des systèmes d'implants suisses et suédois haut de gamme avec un taux de succès de plus de 98 %.",
-        "highlights": ["Taux de succès de 98 %+", "Plus de 90 % de la force de morsure naturelle restaurée", "Dents temporaires disponibles le jour même", "Garantie à vie"],
+        "intro": "Les implants dentaires représentent la solution la plus fiable et la plus durable pour remplacer une ou plusieurs dents manquantes. Une racine artificielle en titane biocompatible est insérée dans l'os de la mâchoire, où elle s'intègre naturellement afin de créer une base solide pour une couronne en céramique parfaitement adaptée à votre sourire. Chez Soufia Clinic, nous utilisons exclusivement des systèmes d'implants premium d'origine suisse et suédoise, reconnus mondialement pour leur fiabilité et leur taux de réussite supérieur à 98 %.",
+        "highlights": ["Taux de réussite supérieur à 98 %", "Jusqu'à 90 % de la force naturelle de mastication retrouvée", "Dents provisoires le jour même (selon éligibilité)", "Garantie à vie (selon conditions de la clinique)"],
         "sections": [
           {
-            "heading": "Pourquoi les Implants Surpassent les Prothèses Amovibles",
+            "heading": "Pourquoi Choisir un Implant Dentaire ?",
             "items": [
-              "Préviennent la détérioration de l'os de la mâchoire grâce à une stimulation naturelle",
-              "Une solution permanente conçue pour durer toute la vie",
-              "Restaurent plus de 90 % de la force de morsure naturelle pour une alimentation normale",
-              "Restent fixes sans glisser",
-              "Offrent une esthétique qui correspond à vos dents naturelles"
+              "Préserve l'os de la mâchoire en stimulant naturellement l'os et empêche sa résorption après la perte d'une dent",
+              "Restaure plus de 90 % de votre capacité de mastication",
+              "Permet de manger, sourire et parler en toute confiance, sans bouger ni nécessiter d'adhésif",
+              "Offre un résultat parfaitement naturel, tant sur le plan esthétique que fonctionnel",
+              "Conçu pour durer plusieurs décennies avec un bon entretien"
             ]
           },
           {
-            "heading": "Options de Traitement",
+            "heading": "Nos Solutions d'Implantologie",
             "items": [
-              "Implant Unitaire : 3 à 6 mois pour être complété, le choix le plus économique à long terme avec un taux de succès de 98 %",
-              "All-on-4 / All-on-6 : remplace une arcade dentaire complète avec seulement 4 à 6 implants, avec des dents temporaires posées le jour même"
+              "Implant Unitaire : la solution idéale pour remplacer une seule dent absente, avec un taux de réussite supérieur à 98 % et un traitement réalisé en 3 à 6 mois",
+              "All-on-4® & All-on-6® : retrouvez un sourire complet grâce à seulement 4 ou 6 implants supportant une arcade dentaire fixe, avec des dents fixes provisoires dès le jour de l'intervention"
             ]
           },
           {
-            "heading": "La Procédure en Trois Étapes",
+            "heading": "Les Étapes du Traitement",
             "items": [
-              "Jour 1 — Pose chirurgicale : l'implant en titane est inséré sous anesthésie locale et une dent temporaire est posée immédiatement",
-              "3 à 6 mois — Ostéointégration : l'os fusionne naturellement avec l'implant (4 à 6 mois pour la mâchoire supérieure, 3 à 4 mois pour l'inférieure)",
-              "Étape finale — Pose de la couronne : une couronne en porcelaine sur mesure est fixée une fois l'implant totalement intégré"
+              "Étape 1 — Pose de l'implant : consultation complète, scanner 3D, intervention sous anesthésie locale et mise en place de l'implant en titane, avec une dent provisoire possible le jour même",
+              "Étape 2 — Ostéointégration : l'implant fusionne naturellement avec l'os (3 à 4 mois pour la mâchoire inférieure, 4 à 6 mois pour la mâchoire supérieure)",
+              "Étape 3 — Pose de la couronne définitive : empreinte numérique haute précision, fabrication d'une couronne en céramique sur mesure, ajustement puis fixation définitive"
             ]
           },
           {
-            "heading": "Êtes-vous Éligible ?",
+            "heading": "Suis-je un Bon Candidat ?",
             "items": [
-              "Volume osseux suffisant (greffe osseuse disponible si nécessaire)",
-              "Gencives saines, sans maladie active",
-              "Non-fumeur ou prêt à arrêter pendant la cicatrisation",
-              "Bon état de santé général (diabète contrôlé accepté)"
+              "Vous présentez une quantité d'os suffisante (une greffe osseuse peut être réalisée si nécessaire)",
+              "Vos gencives sont saines et exemptes d'infection",
+              "Vous êtes non-fumeur ou prêt à arrêter pendant la période de cicatrisation",
+              "Vous êtes en bonne santé générale (un diabète bien équilibré n'est généralement pas une contre-indication)"
             ]
           }
         ]
@@ -178,31 +178,41 @@
         "tagline": "Transformation Complète du Sourire",
         "cardDescription": "De fines coquilles en céramique sur mesure qui transforment la forme, la couleur et l'alignement de votre sourire.",
         "image": "/images/treatment-dental-veneers.jpg",
-        "intro": "Les facettes en porcelaine sont de fines coquilles céramiques, de seulement 0,3 à 0,5 mm, fabriquées sur mesure pour recouvrir la surface avant de vos dents. Elles offrent une approche plus conservatrice de l'amélioration du sourire que les couronnes, en préservant davantage la structure naturelle de la dent.",
-        "highlights": ["Seulement 0,3 à 0,5 mm d'épaisseur", "2 visites, espacées de 5 à 7 jours", "95 % durent plus de 10 ans", "Garantie à vie"],
+        "intro": "Les facettes dentaires sont de fines pellicules en céramique haute résistance, d'une épaisseur comprise entre 0,3 et 0,5 mm, conçues sur mesure pour recouvrir la face visible des dents. Elles permettent de transformer votre sourire de manière naturelle tout en préservant un maximum de votre émail d'origine. Chez Soufia Clinic, nous réalisons des facettes en céramique de dernière génération offrant un résultat esthétique exceptionnel, une excellente résistance et une parfaite harmonie avec vos dents naturelles.",
+        "highlights": ["Épaisseur ultra-fine de 0,3 à 0,5 mm", "Traitement en 2 rendez-vous, espacés de 5 à 7 jours", "95 % des facettes restent intactes après 10 ans", "Garantie à vie (selon conditions de la clinique)"],
         "sections": [
           {
             "heading": "Ce que les Facettes Peuvent Corriger",
             "items": [
-              "Décoloration : taches permanentes dues à la tétracycline, la fluorose ou un traitement de canal",
-              "Éclats et usure : réparation des bords usés et reconstruction de la longueur de la dent",
-              "Espaces et écarts : fermeture de petits espaces sans orthodontie",
-              "Léger désalignement : rendre des dents légèrement de travers apparemment droites"
+              "Coloration des dents : taches permanentes, fluorose, coloration après un traitement de canal, dents jaunies résistantes au blanchiment",
+              "Dents ébréchées ou usées : réparation des dents cassées, reconstruction des bords usés, harmonisation de la longueur des dents",
+              "Espaces entre les dents : fermeture des petits espaces (diastèmes), souvent sans traitement orthodontique",
+              "Légères malpositions : correction visuelle de dents légèrement chevauchées pour un sourire parfaitement aligné"
             ]
           },
           {
-            "heading": "Processus de Traitement",
+            "heading": "Déroulement du Traitement",
             "items": [
-              "Visite 1 : préparation minimale de l'émail, empreintes numériques et pose de facettes temporaires",
-              "Visite 2 (5 à 7 jours plus tard) : collage permanent avec un adhésif de la couleur de la dent et ajustements finaux"
+              "1ère consultation : analyse esthétique du sourire, préparation minimale de l'émail, scan numérique 3D haute précision, fabrication sur mesure et pose de facettes provisoires si nécessaire",
+              "2ème consultation (5 à 7 jours plus tard) : essayage des facettes définitives, vérification de la couleur, de la forme et de l'occlusion, collage définitif avec une résine haute performance, polissage et finitions"
             ]
           },
           {
-            "heading": "Combien de Temps Durent les Facettes ?",
+            "heading": "Quelle est la Durée de Vie des Facettes ?",
             "items": [
-              "95 % des facettes sont encore en place après 10 ans",
-              "85 % sont encore en place après 15 ans",
-              "Une hygiène quotidienne, éviter les objets durs et des contrôles réguliers prolongent encore leur durée de vie"
+              "95 % des facettes sont toujours en parfait état après 10 ans",
+              "85 % conservent leurs performances après 15 ans",
+              "Une bonne hygiène bucco-dentaire et des contrôles réguliers prolongent encore leur durée de vie"
+            ]
+          },
+          {
+            "heading": "Conseils pour Préserver Vos Facettes",
+            "items": [
+              "Brossez vos dents au moins deux fois par jour",
+              "Utilisez du fil dentaire quotidiennement",
+              "Évitez de croquer des objets ou aliments extrêmement durs",
+              "Portez une gouttière de nuit en cas de bruxisme",
+              "Consultez votre dentiste régulièrement pour un suivi professionnel"
             ]
           }
         ]
@@ -214,43 +224,44 @@
         "tagline": "Relooking Complet du Sourire",
         "cardDescription": "Un relooking complet du sourire alliant art et science pour des dents parfaitement alignées et éclatantes de blancheur.",
         "image": "/images/treatment-hollywood-smile.jpg",
-        "intro": "Le Hollywood Smile est un relooking complet du sourire qui allie art et science pour créer des dents parfaitement alignées et éclatantes de blancheur, tout en gardant un aspect totalement naturel. En suivant le nombre d'or et une teinte d'un blanc éclatant, il offre un effet orthodontique instantané sans appareil dentaire.",
-        "highlights": ["16 à 20 facettes premium", "Relooking complet en 5 à 7 jours", "Garantie de 15 à 25 ans", "Digital Smile Design inclus"],
+        "intro": "Le Hollywood Smile est bien plus qu'un simple traitement esthétique : c'est une reconstruction complète du sourire, alliant expertise dentaire, design numérique et harmonie faciale. Grâce à des facettes en céramique haut de gamme, nous créons un sourire parfaitement aligné, lumineux et naturel, adapté à la morphologie de votre visage. Chez Soufia Clinic, chaque Hollywood Smile est entièrement personnalisé selon les principes du Digital Smile Design (DSD) et du Golden Ratio.",
+        "highlights": ["16 à 20 facettes premium en céramique", "Transformation complète en 5 à 7 jours", "Garantie jusqu'à 25 ans selon le matériau choisi", "Digital Smile Design (DSD) inclus"],
         "sections": [
           {
-            "heading": "Ce qui Fait un Sourire « Hollywood »",
+            "heading": "Pourquoi Choisir un Hollywood Smile ?",
             "items": [
-              "Une symétrie parfaite suivant les principes du nombre d'or",
-              "Une teinte d'un blanc éclatant (généralement A1 ou B1)",
-              "Une translucidité naturelle qui imite l'émail réel",
-              "Un effet orthodontique instantané sans appareil dentaire"
+              "Sourire parfaitement symétrique selon les proportions du Golden Ratio",
+              "Dents plus blanches et éclatantes (teintes A1 ou B1 selon votre préférence)",
+              "Alignement visuel immédiat sans appareil orthodontique dans de nombreux cas",
+              "Transparence naturelle reproduisant fidèlement l'émail d'origine",
+              "Un sourire photogénique qui reste élégant et naturel sous tous les angles"
             ]
           },
           {
-            "heading": "Le Parcours en 7 Jours",
+            "heading": "Votre Transformation en 7 Jours",
             "items": [
-              "Jour 1 : consultation Digital Smile Design avec imagerie 3D, analyse faciale et choix de la teinte",
-              "Jours 2-3 : préparation dentaire de précision avec un retrait minimal, facettes temporaires posées immédiatement",
-              "Jours 4-6 : vos facettes sur mesure sont façonnées à la main par un maître céramiste utilisant du disilicate de lithium E-Max",
-              "Jour 7 : collage final et dévoilement du sourire"
+              "Jour 1 — Étude personnalisée du sourire : consultation, photographies haute définition, scanner numérique 3D, analyse du visage, simulation Digital Smile Design et choix de la teinte",
+              "Jours 2 & 3 — Préparation des dents : préparation minimalement invasive, préservation maximale de l'émail naturel et pose immédiate de facettes provisoires",
+              "Jours 4 à 6 — Fabrication artisanale : vos facettes sont réalisées sur mesure par des céramistes spécialisés pour une forme, une couleur et une translucidité parfaitement naturelles",
+              "Jour 7 — Pose finale : essayage, vérification de l'esthétique et de l'occlusion, collage définitif, ajustements de précision et révélation de votre nouveau sourire"
             ]
           },
           {
-            "heading": "Options de Matériaux",
+            "heading": "Nos Matériaux Premium",
             "items": [
-              "E-Max (recommandé) : la translucidité la plus naturelle, résistance de 400 MPa, garantie de 15 à 20 ans",
-              "Zircone (résistance maximale) : quasiment indestructible, garantie de 20 à 25 ans"
+              "E-Max® (notre recommandation) : transparence proche de l'émail naturel, résistance d'environ 400 MPa, durée de vie estimée de 15 à 20 ans — idéal pour un sourire élégant et lumineux",
+              "Zircone Premium : résistance de plus de 1200 MPa, excellente durabilité, longévité estimée de 20 à 25 ans — recommandée pour les patients ayant une forte force de mastication"
             ]
           },
           {
-            "heading": "Ce qui est Inclus",
+            "heading": "Votre Traitement Comprend",
             "items": [
-              "16 à 20 facettes premium",
-              "Digital Smile Design",
-              "Facettes temporaires",
+              "16 à 20 facettes premium sur mesure",
+              "Étude Digital Smile Design (DSD) et scanner numérique 3D",
+              "Facettes provisoires",
               "Nettoyage dentaire professionnel",
-              "Correspondance de teinte personnalisée",
-              "Kit de soins post-traitement"
+              "Choix personnalisé de la couleur",
+              "Kit complet de soins post-traitement et suivi personnalisé"
             ]
           }
         ]
@@ -259,40 +270,40 @@
         "id": 5,
         "slug": "teeth-whitening",
         "title": "Blanchiment Dentaire",
-        "tagline": "Résultats Professionnels et Éclatants",
+        "tagline": "Un Sourire Plus Blanc, Plus Lumineux",
         "cardDescription": "Un blanchiment supervisé par un dentiste qui éclaircit les dents de 6 à 10 teintes en une seule séance de 60 à 90 minutes.",
         "image": "/images/treatment-teeth-whitening.jpg",
-        "intro": "Notre blanchiment professionnel en cabinet utilise des agents blanchissants de qualité pharmaceutique (35 à 40 % de peroxyde d'hydrogène) pour éclaircir les dents de 6 à 10 teintes en seulement 60 à 90 minutes — bien au-delà de ce que les kits en vente libre peuvent offrir, et entièrement supervisé par un dentiste pour votre confort et votre sécurité.",
-        "highlights": ["6 à 10 teintes plus claires", "Résultats en 60 à 90 minutes", "Supervisé par un dentiste", "Résultats durables de 1 à 3 ans"],
+        "intro": "Retrouvez l'éclat naturel de votre sourire grâce à notre blanchiment dentaire professionnel réalisé en clinique. Chez Soufia Clinic, nous utilisons des agents blanchissants de qualité médicale à base de peroxyde d'hydrogène (35 à 40 %) pour éclaircir efficacement vos dents de 6 à 10 teintes en une seule séance, sous la supervision de nos chirurgiens-dentistes.",
+        "highlights": ["Jusqu'à 10 teintes plus blanches", "Résultats visibles en 60 à 90 minutes", "Traitement supervisé par un dentiste", "Résultats pouvant durer 1 à 3 ans"],
         "sections": [
           {
-            "heading": "Professionnel vs. Kits à Domicile",
+            "heading": "Blanchiment Professionnel vs. Kits à Domicile",
             "items": [
-              "Professionnel : concentration de 35 à 40 %, résultats en 60 à 90 minutes, 6 à 10 teintes plus claires, supervision d'un dentiste et protection des gencives incluses",
-              "Kits à domicile : concentration de 3 à 10 %, 2 à 4 semaines d'application quotidienne, seulement 2 à 4 teintes plus claires, avec un risque plus élevé d'irritation des gencives et de résultats inégaux"
+              "Blanchiment professionnel Soufia Clinic : concentration médicale de 35 à 40 %, résultats immédiats en une seule séance, jusqu'à 6 à 10 teintes plus blanches, protection des gencives et traitement personnalisé sous contrôle d'un spécialiste",
+              "Kits de blanchiment à domicile : concentration limitée (3 à 10 %), traitement quotidien pendant plusieurs semaines, résultats souvent limités à 2 à 4 teintes, éclaircissement moins homogène et risque plus élevé de sensibilité et d'irritation gingivale"
             ]
           },
           {
-            "heading": "Le Processus de Blanchiment",
+            "heading": "Comment se Déroule le Traitement ?",
             "items": [
-              "Étape 1 — Préparation : un nettoyage professionnel élimine la plaque, votre teinte est mesurée et les gencives sont protégées",
-              "Étape 2 — Application du gel : un gel professionnel est activé par une lumière LED bleue en cycles de 15 à 20 minutes",
-              "Étape 3 — Cycles multiples : le gel est réappliqué 3 à 4 fois pour éliminer progressivement les taches profondes"
+              "Étape 1 — Préparation : nettoyage professionnel des dents, élimination de la plaque et des colorations superficielles, évaluation de la teinte initiale et protection des gencives",
+              "Étape 2 — Application du gel : un gel blanchissant haute performance est appliqué puis activé à l'aide d'une lampe LED bleue, en cycles d'environ 15 à 20 minutes",
+              "Étape 3 — Optimisation du résultat : le gel est renouvelé 3 à 4 fois afin d'éliminer progressivement les colorations profondes et d'obtenir un résultat uniforme et éclatant"
             ]
           },
           {
-            "heading": "Résultats Attendus selon le Type de Tache",
+            "heading": "Quels Résultats Peut-on Attendre ?",
             "items": [
-              "Taches de café/thé : 8 à 10 teintes plus claires",
-              "Taches jaunes/liées à l'âge : 6 à 8 teintes plus claires",
-              "Taches de tabac : 5 à 7 teintes plus claires"
+              "Taches liées au café ou au thé : éclaircissement de 8 à 10 teintes",
+              "Jaunissement naturel lié à l'âge : éclaircissement de 6 à 8 teintes",
+              "Taches dues au tabac : éclaircissement de 5 à 7 teintes"
             ]
           },
           {
-            "heading": "Soins Post-Traitement — 48 Premières Heures Critiques",
+            "heading": "Les 48 Premières Heures : Une Étape Essentielle",
             "items": [
-              "Évitez tous les aliments et boissons tachants : café, thé, vin rouge, fruits rouges, sauce tomate",
-              "Les pores des dents restent ouverts durant cette période et absorbent facilement les taches"
+              "L'émail est temporairement plus perméable aux pigments : évitez pendant 48 heures le café, le thé, le vin rouge, les fruits rouges, la sauce tomate, les boissons colorées et le tabac",
+              "Respecter ces recommandations permet de prolonger durablement les résultats du blanchiment"
             ]
           }
         ]
@@ -300,38 +311,38 @@
     ]
   },
   "services": {
-    "sectionLabel": "Services Patients",
-    "title": "Tout Inclus dans Votre Séjour",
-    "subtitle": "Nous prenons soin de chaque détail pour que vous puissiez vous concentrer sur votre sourire.",
+    "sectionLabel": "Services aux Patients",
+    "title": "Une Expérience Tout Compris, Pensée Pour Votre Confort",
+    "subtitle": "Chez Soufia Clinic, nous nous occupons de chaque détail de votre séjour afin que vous puissiez vous concentrer sur l'essentiel : retrouver un sourire sain, naturel et durable.",
     "items": [
       {
         "id": 1,
-        "title": "Séjour Hôtel de Luxe",
-        "description": "Pendant votre parcours médical et dentaire, la Clinique Soufia offre à ses patients internationaux un hébergement gratuit dans des hôtels 5 étoiles présélectionnés à Istanbul.",
+        "title": "Hébergement Premium Offert",
+        "description": "Parce que votre confort fait partie intégrante de votre traitement, Soufia Clinic offre à ses patients internationaux un séjour dans des hôtels 5 étoiles soigneusement sélectionnés à Istanbul.",
         "iconName": "Hotel"
       },
       {
         "id": 2,
-        "title": "Support Multilingue",
-        "description": "Nous assignons un hôte personnel et un interprète professionnel qui parle couramment votre langue pour vous accompagner à chaque étape de votre séjour.",
+        "title": "Accompagnement Multilingue Personnalisé",
+        "description": "Dès votre arrivée, un coordinateur dédié vous accompagne tout au long de votre parcours de soins, avec un interprète professionnel présent lors de vos consultations si nécessaire.",
         "iconName": "Languages"
       },
       {
         "id": 3,
-        "title": "Suivi Dédié",
-        "description": "La Clinique Soufia suit et surveille ses patients pendant une année complète après leur traitement dentaire ou implants, avec des contrôles réguliers à distance.",
+        "title": "Suivi Personnalisé Après Votre Traitement",
+        "description": "Chez Soufia Clinic, nous assurons un accompagnement personnalisé pendant 12 mois après votre traitement ou la pose de vos implants dentaires, grâce à des consultations de suivi à distance.",
         "iconName": "ShieldAlert"
       },
       {
         "id": 4,
-        "title": "Consultation Gratuite",
-        "description": "La Clinique Soufia ne facture pas la consultation virtuelle initiale ni la planification clinique détaillée du traitement, offrant un diagnostic sourire numérique transparent.",
+        "title": "Consultation Initiale Offerte",
+        "description": "Avant votre déplacement à Istanbul, nos spécialistes réalisent une évaluation approfondie de votre situation afin d'élaborer un plan de traitement personnalisé, sans engagement et sans frais.",
         "iconName": "CalendarDays"
       },
       {
         "id": 5,
-        "title": "Bien-être du Patient",
-        "description": "Nous traitons chaque patient comme un membre de notre famille. Notre priorité est de rendre votre expérience dentaire sans douleur, confortable et satisfaisante.",
+        "title": "Votre Bien-être, Notre Priorité",
+        "description": "Chez Soufia Clinic, nous accueillons chaque patient avec la même attention et la même bienveillance que s'il faisait partie de notre famille. Notre mission est de vous offrir une expérience dentaire sereine, sans douleur et entièrement personnalisée, du premier contact jusqu'à la fin de votre suivi.",
         "iconName": "Heart"
       },
       {
