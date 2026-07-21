@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { CLINIC_PHONE, CLINIC_WHATSAPP } from '../data';
 import { Send, Phone, Mail, ChevronRight, AlertCircle, Loader2 } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
 import PhoneField from './PhoneField';
@@ -11,6 +10,8 @@ interface FooterProps {
 
 export default function Footer({ onRegister }: FooterProps) {
   const { t } = useTranslation();
+  const CLINIC_PHONE = t.clinic.phone;
+  const CLINIC_WHATSAPP = t.clinic.whatsapp;
   const [formData, setFormData] = useState({ name: '', phone: '', message: '' });
   const [errors, setErrors] = useState<Partial<typeof formData>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);

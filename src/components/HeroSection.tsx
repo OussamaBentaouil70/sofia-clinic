@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { CLINIC_WHATSAPP } from '../data';
 import { Calendar, Check, AlertCircle, Loader2 } from 'lucide-react';
 import { ConsultationSubmit } from '../types';
 import WhatsAppIcon from './WhatsAppIcon';
@@ -12,6 +11,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ onRegister }: HeroSectionProps) {
   const { t } = useTranslation();
+  const CLINIC_WHATSAPP = t.clinic.whatsapp;
   const [formData, setFormData] = useState<ConsultationSubmit>({ name: '', phone: '', email: '', message: '' });
   const [errors, setErrors] = useState<Partial<ConsultationSubmit>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);

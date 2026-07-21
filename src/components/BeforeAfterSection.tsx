@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight, RotateCcw, X, ZoomIn, ZoomOut } from 'lucide-react';
-import { CLINIC_WHATSAPP } from '../data';
 import WhatsAppIcon from './WhatsAppIcon';
 import { useTranslation } from '../contexts/LanguageContext';
 
 export default function BeforeAfterSection() {
   const { t } = useTranslation();
+  const CLINIC_WHATSAPP = t.clinic.whatsapp;
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   return (

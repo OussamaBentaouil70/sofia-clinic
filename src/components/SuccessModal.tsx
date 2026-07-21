@@ -6,7 +6,6 @@
 import { X, CheckCircle2, ShieldCheck, ArrowLeft } from 'lucide-react';
 import { motion } from 'motion/react';
 import { ConsultationRequest } from '../types';
-import { CLINIC_WHATSAPP } from '../data';
 import { useTranslation } from '../contexts/LanguageContext';
 import WhatsAppIcon from './WhatsAppIcon';
 
@@ -17,6 +16,7 @@ interface SuccessModalProps {
 
 export default function SuccessModal({ request, onClose }: SuccessModalProps) {
   const { t } = useTranslation();
+  const CLINIC_WHATSAPP = t.clinic.whatsapp;
   if (!request) return null;
 
   return (

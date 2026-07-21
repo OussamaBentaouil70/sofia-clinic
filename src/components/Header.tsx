@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import { Menu, X, Globe } from 'lucide-react';
-import { CLINIC_WHATSAPP } from '../data';
 import { motion, AnimatePresence } from 'motion/react';
 import WhatsAppIcon from './WhatsAppIcon';
 import { useTranslation } from '../contexts/LanguageContext';
@@ -11,6 +10,7 @@ export default function Header() {
   const [langOpen, setLangOpen] = useState(false);
   const langRef = useRef<HTMLDivElement>(null);
   const { lang, setLang, t } = useTranslation();
+  const CLINIC_WHATSAPP = t.clinic.whatsapp;
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);

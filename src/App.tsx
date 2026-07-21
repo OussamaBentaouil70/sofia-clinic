@@ -20,7 +20,7 @@ import Footer from './components/Footer';
 import SuccessModal from './components/SuccessModal';
 import { ConsultationSubmit, ConsultationRequest } from './types';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost/sofia-clinic/api';
+const API_URL = import.meta.env.VITE_API_URL || '/api';
 
 export default function App() {
   const [activeConsultation, setActiveConsultation] = useState<ConsultationRequest | null>(null);

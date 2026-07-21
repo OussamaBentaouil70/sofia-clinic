@@ -1,11 +1,11 @@
 import { Award, ShieldCheck, Heart } from 'lucide-react';
-import { CLINIC_WHATSAPP } from '../data';
 import WhatsAppIcon from './WhatsAppIcon';
 import { useTranslation } from '../contexts/LanguageContext';
 
 export default function SpecialtySection() {
   const { t } = useTranslation();
   const s = t.specialty;
+  const CLINIC_WHATSAPP = t.clinic.whatsapp;
   return (
     <section id="specialty" className="relative bg-white overflow-hidden border-b border-gray-100">
       <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[500px]">

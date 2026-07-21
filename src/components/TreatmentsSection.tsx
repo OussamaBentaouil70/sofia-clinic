@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ArrowRight, CheckCircle2, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { CLINIC_WHATSAPP } from '../data';
 import { useTranslation } from '../contexts/LanguageContext';
 import { Treatment } from '../types';
 import WhatsAppIcon from './WhatsAppIcon';
@@ -83,6 +82,8 @@ interface TreatmentModalProps {
 }
 
 function TreatmentModal({ treatment, highlightsLabel, ctaLabel, onClose }: TreatmentModalProps) {
+  const { t } = useTranslation();
+  const CLINIC_WHATSAPP = t.clinic.whatsapp;
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
